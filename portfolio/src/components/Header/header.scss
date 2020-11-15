@@ -1,0 +1,28 @@
+@import '../../partials/global';
+
+a {
+    text-decoration: none;
+}
+.header {
+
+    &__nav {
+
+        &-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+            
+            &-item {
+                color: black;
+                font-size: 2vw;
+                transition: 0.5s ease-in-out;
+
+                &:hover {
+                    animation: linkHover 1s linear infinite;
+                    letter-spacing: 0.2vw;
+                }
+            }
+        }
+    }
+}
