@@ -1,0 +1,24 @@
+@import '../../partials/global';
+
+.projects {
+    background-image: url('../../assets/images/clouds.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40vw;
+    width: 100%;
+    overflow: auto;
+
+    &__title {
+        font-size: 3vw;
+        margin: 0; 
+    }
+    &__container {
+        
+    }
+    &__line {
+        background-image: url('../../assets/images/clothesline.png');
+        position: absolute;
+        width: 100%;
+        height: 15vw;
+    }
+}
