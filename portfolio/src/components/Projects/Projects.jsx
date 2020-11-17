@@ -11,6 +11,10 @@ function Projects() {
         <div className="projects">
             <p className="projects__title">projects</p>
             <div className="projects__container">
+                dnwajkfnwaklfl
+                dnwajkfnwaklfldwadfaw
+                fwafwa
+                fawf
                 <div className="projects__line-container">
                     <img src={Line} alt="Clothes Line" className="projects__line"/>
                     <img src={Line} alt="Clothes Line" className="projects__line"/>
