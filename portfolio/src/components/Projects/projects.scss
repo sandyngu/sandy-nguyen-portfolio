@@ -6,20 +6,21 @@
     background-size: 100%;
     height: 40vw;
     width: 100%;
-    overflow: scroll;
 
     &__title {
         font-size: 3vw;
         margin: 0; 
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
     }
     &__container {
-        overflow: scroll;
-        height: 50vw;
+        overflow-x: scroll;
+        height: 35vw;
     }
     &__line {
         height: 15vw;
-        width: 100%;
-        z-index: 3;
+        width: 100vw;
+        z-index: 2;
 
         &-container {
             display: flex;
@@ -28,15 +29,69 @@
     }
     &__image {
         position: absolute;
-        width: 16vw;
+        width: 16.9vw;
         height: 11.2vw;
+        margin-left: -17.6%;
+        top: 9.6%;
+
+        &3 {
+            display: none;
+
+            &--show {
+                display: block;
+            }
+        }
+        &2 {
+            display: none;
+
+            &--show {
+                display: block;
+            }
+        }
 
         &-container {
             position: relative;
-            margin: -4.6%;
+            margin: -3.9% -5%;
             display: flex;
             width: 100%;
             z-index: 0;
+        }
+    }
+    &__text {
+        position: absolute;
+        font-family: 'Handletters';
+        margin-left: 7%;
+        margin-top: -3.75%;
+        font-size: 2.5vw;
+        letter-spacing: 0.1vw;
+        width: 10vw;
+        z-index: 2;
+        text-align: right;
+        font-weight: bold;
+
+        &-two {
+            line-height: 1.5vw;
+            margin-top: -4%;
+        }
+    }
+    &__border {
+        width: 22vw;
+            height: 21vw;
+            margin-left: -20%;
+            margin-top: -1.75%;
+            position: absolute;
+            z-index: 2;
+            filter: brightness(0);
+
+        &-stars {
+            width: 22vw;
+            height: 21vw;
+            margin-left: -20%;
+            margin-top: -1.75%;
+            position: absolute;
+            z-index: 2;
+            filter: brightness(0);
+            animation: stars 1.5s infinite;
         }
     }
 }

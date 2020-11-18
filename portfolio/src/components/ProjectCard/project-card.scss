@@ -1,17 +1,12 @@
 @import '../../partials/global';
 
 .project__card {
-    margin: 0 17% 0 8%;
+    margin: 0 -1% 0 8%;
 
     &-background {
-        position: absolute;
+        position: relative;
         height: 16.5vw;
         width: 18vw;
         z-index: 2;
-    }
-    &-image {
-        position: absolute;
-        margin-left: 1%;
-        margin-top: 1.5%;
     }
 }

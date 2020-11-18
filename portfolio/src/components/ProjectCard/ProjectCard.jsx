@@ -6,9 +6,7 @@ function ProjectCard(props) {
     return (
         <div className="project__card">
             <img src={Polaroid} alt="Polaroid" className="project__card-background"/>
-            <div className="project__card-image">
-                {props.children}
-            </div>
+            {props.children}
         </div>
     );
 };
