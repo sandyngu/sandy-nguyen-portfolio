@@ -51,7 +51,7 @@
 
         &-container {
             position: relative;
-            margin: -3.9% -5%;
+            margin: -3.8% -5%;
             display: flex;
             width: 100%;
             z-index: 0;
@@ -81,7 +81,7 @@
             margin-top: -1.75%;
             position: absolute;
             z-index: 2;
-            filter: brightness(0);
+            filter: brightness(0) opacity(0.8);
 
         &-stars {
             width: 22vw;
@@ -91,7 +91,7 @@
             position: absolute;
             z-index: 2;
             filter: brightness(0);
-            animation: stars 1.5s infinite;
+            animation: pulse 2s infinite;
         }
     }
 }
