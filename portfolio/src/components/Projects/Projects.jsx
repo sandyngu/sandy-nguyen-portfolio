@@ -38,6 +38,14 @@ function Projects() {
     return (
         <div className="projects">
             <p className="projects__title">projects</p>
+            <div className="projects__heading">
+                <div className="projects__heading-circle projects__heading-arrow1">
+                    <div className="projects__heading-arrow">&lt;</div>
+                </div>
+                <div className="projects__heading-circle projects__heading-arrow2">
+                    <div className="projects__heading-arrow">&gt;</div>
+                </div>
+            </div>
             <div className="projects__container">
                 <div className="projects__line-container">
                     <img src={Line} alt="Clothes Line" className="projects__line"/>

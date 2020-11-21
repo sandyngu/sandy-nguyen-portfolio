@@ -19,8 +19,18 @@ a {
                 transition: 0.5s ease-in-out;
                 display: flex;
 
+                &1 {
+                    @extend .header__nav-list-item;
+                }
+                &2 {
+                    @extend .header__nav-list-item;
+                }
+                &3 {
+                    @extend .header__nav-list-item;
+                }
+
                 &:hover {
-                    animation: linkHover 1s linear infinite;
+                    animation: linkHover 1s linear;
                     letter-spacing: 0.2vw;
                 }
 
