@@ -35,14 +35,24 @@ import ArrowBorder from '../../assets/images/arrow-border.png';
 import './projects.scss';
 
 function Projects() {
+
+    function scrollLeft() {
+        document.querySelector('.projects__container').scrollLeft -= 100;
+    }
+
+    function scrollRight() {
+        document.querySelector('.projects__container').scrollLeft += 100;
+    }
+
+
     return (
         <div className="projects">
             <p className="projects__title">projects</p>
             <div className="projects__heading">
-                <div className="projects__heading-circle projects__heading-arrow1">
+                <div className="projects__heading-circle projects__heading-arrow1" onMouseOver={() => scrollLeft()} onMouseDown={() => scrollLeft()}>
                     <div className="projects__heading-arrow">&lt;</div>
                 </div>
-                <div className="projects__heading-circle projects__heading-arrow2">
+                <div className="projects__heading-circle projects__heading-arrow2" onMouseOver={() => scrollRight()} onMouseDown={() => scrollRight()}>
                     <div className="projects__heading-arrow">&gt;</div>
                 </div>
             </div>

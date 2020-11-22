@@ -30,13 +30,27 @@ a {
                 }
 
                 &:hover {
-                    animation: linkHover 1s linear;
+                    animation: linkHover 1.2s linear;
                     letter-spacing: 0.2vw;
+                }
+
+                &--left {
+                    transform: none;
+
+                    &1 {
+                        @extend .header__nav-list-item--left;
+                    }
+                    &2 {
+                        @extend .header__nav-list-item--left;
+                    }
+                    &3 {
+                        @extend .header__nav-list-item--left;
+                    }
                 }
 
                 &--hover {
                     padding: 0 1vw;
-                    transition: 1s ease;
+                    transition: 0.75s ease;
 
                     &1 {
                         @extend .header__nav-list-item--hover;
@@ -47,50 +61,35 @@ a {
                         transform: rotate(90deg); 
                         margin-top: 2%;
                     }
+                }
+
+                &-line {
+
+                    &1 {
+                        animation: 1s line infinite;
+                    }
+                    &2 {
+                        position: absolute;
+                        margin-left: 7.15%;
+                        animation: 1s line2 infinite;
+                    }
                     &3 {
-                        @extend .header__nav-list-item--hover;
-                        transform: rotate(-90deg);
+                        animation: 1s line3 infinite;
                     }
                     &4 {
-                        @extend .header__nav-list-item--hover;
-                        transform: rotate(90deg); 
-                        margin-top: 2%;
+                        position: absolute;
+                        margin-left: 6.05%;
+                        animation: 1s line4 infinite;
                     }
                     &5 {
-                        @extend .header__nav-list-item--hover;
-                        transform: rotate(-90deg);
+                        animation: 1s line5 infinite;
                     }
                     &6 {
-                        @extend .header__nav-list-item--hover;
-                        transform: rotate(90deg);
-                        margin-top: 2%;
-                    }
+                        position: absolute;
+                        margin-left: 5.95%;
+                        animation: 1s line6 infinite;
+                    } 
                 }
-                &-line1 {
-                    animation: 1.5s line infinite;
-                }
-                &-line2 {
-                    position: absolute;
-                    margin-left: 7.15%;
-                    animation: 1.5s line2 infinite;
-                }
-                &-line3 {
-                    animation: 1.5s line3 infinite;
-                }
-                &-line4 {
-                    position: absolute;
-                    margin-left: 6.05%;
-                    animation: 1.5s line4 infinite;
-                }
-                &-line5 {
-                    animation: 1.5s line5 infinite;
-                }
-                &-line6 {
-                    position: absolute;
-                    margin-left: 5.95%;
-                    animation: 1.5s line6 infinite;
-                }
-                
             }
         }
     }

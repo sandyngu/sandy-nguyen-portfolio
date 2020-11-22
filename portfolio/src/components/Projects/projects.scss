@@ -43,6 +43,10 @@
     &__container {
         overflow-x: scroll;
         height: 35vw;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     &__line {
         height: 15vw;
