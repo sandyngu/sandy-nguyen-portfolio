@@ -66,28 +66,55 @@ a {
                 &-line {
 
                     &1 {
-                        animation: 1s line infinite;
+                        &--move {
+                            animation: 1s line 1;
+                            transform: rotate(160deg) translate(-2.05vw, 0vw);
+                        }
                     }
                     &2 {
                         position: absolute;
                         margin-left: 7.15%;
-                        animation: 1s line2 infinite;
+                        display: none;
+                        
+                        &--move {
+                            animation: 1s line2;
+                            display: block;
+                            transform: rotate(-200deg) translate(5.74vw, 2.4vw);
+                        }
                     }
                     &3 {
-                        animation: 1s line3 infinite;
+                        &--move {
+                            animation: 1s line3;
+                            transform: rotate(160deg) translate(-2.1vw, 0.03vw);
+                        }
                     }
                     &4 {
                         position: absolute;
                         margin-left: 6.05%;
-                        animation: 1s line4 infinite;
+                        display: none;
+                        
+                        &--move {
+                            animation: 1s line4;
+                            display: block;
+                            transform: rotate(-200deg) translate(4.67vw, 2.15vw);
+                        }
                     }
                     &5 {
-                        animation: 1s line5 infinite;
+                        &--move {
+                            animation: 1s line5;
+                            transform: rotate(160deg) translate(-2.07vw, 0vw);
+                        }
                     }
                     &6 {
                         position: absolute;
                         margin-left: 5.95%;
-                        animation: 1s line6 infinite;
+                        display: none;
+
+                        &--move {
+                            animation: 1s line6;
+                            display: block;
+                            transform: rotate(-200deg) translate(4.6vw, 2.1vw);
+                        }
                     } 
                 }
             }
