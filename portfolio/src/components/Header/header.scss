@@ -4,9 +4,11 @@ a {
     text-decoration: none;
 }
 .header {
-
+    background-color: rgba(0,0,0,0.05);
+    margin: 0;
+    
     &__nav {
-
+        
         &-list {
             list-style-type: none;
             display: flex;
@@ -30,7 +32,7 @@ a {
                 }
 
                 &:hover {
-                    animation: linkHover 1.2s linear;
+                    animation: linkHover 0.9s linear;
                     letter-spacing: 0.2vw;
                 }
 
@@ -59,7 +61,7 @@ a {
                     &2 {
                         @extend .header__nav-list-item--hover;
                         transform: rotate(90deg); 
-                        margin-top: 2%;
+                        margin-top: 3%;
                     }
                 }
 
@@ -68,7 +70,7 @@ a {
                     &1 {
                         &--move {
                             animation: 1s line 1;
-                            transform: rotate(160deg) translate(-2.05vw, 0vw);
+                            transform: rotate(160deg) translate(-2.04vw, 0vw);
                         }
                     }
                     &2 {
@@ -79,7 +81,7 @@ a {
                         &--move {
                             animation: 1s line2;
                             display: block;
-                            transform: rotate(-200deg) translate(5.74vw, 2.4vw);
+                            transform: rotate(-200deg) translate(5.87vw, 2.4vw);
                         }
                     }
                     &3 {
@@ -96,13 +98,13 @@ a {
                         &--move {
                             animation: 1s line4;
                             display: block;
-                            transform: rotate(-200deg) translate(4.67vw, 2.15vw);
+                            transform: rotate(-200deg) translate(4.8vw, 2.15vw);
                         }
                     }
                     &5 {
                         &--move {
                             animation: 1s line5;
-                            transform: rotate(160deg) translate(-2.07vw, 0vw);
+                            transform: rotate(160deg) translate(-2.08vw, 0vw);
                         }
                     }
                     &6 {
@@ -113,7 +115,7 @@ a {
                         &--move {
                             animation: 1s line6;
                             display: block;
-                            transform: rotate(-200deg) translate(4.6vw, 2.1vw);
+                            transform: rotate(-200deg) translate(4.66vw, 2.1vw);
                         }
                     } 
                 }

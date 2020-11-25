@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import Line from '../../assets/images/clothesline.png';
 import CoffeeShop from '../../assets/images/coffeeshop.png';
@@ -36,23 +37,68 @@ import './projects.scss';
 
 function Projects() {
 
-    function scrollLeft() {
-        document.querySelector('.projects__container').scrollLeft -= 100;
+    function scroll() {
+        // document.querySelector('.projects__container').scrollLeft -= 100;
+        let box = $(".projects__container"), x;
+            $(".projects__heading-circle").hover(function() {
+            if ($(this).hasClass("projects__heading-arrow2")) {
+                x = '+=10';
+                box.animate({
+                    scrollTop: x,
+                }, 100, 'linear', function() {
+                    if (x !== '') {
+                      x = '';
+                    }
+                  })
+            } else {
+                x = '-=10';
+                box.animate({
+                    scrollTop: x,
+                }, 100, 'linear', function() {
+                    if (x !== '') {
+                      x = '';
+                    }
+                  })
+            }
+            })
     }
+
+    // let amount = '';
+    
+    // function scroll() {
+    //     $('.projects__container').animate({
+    //         scrollLeft: amount
+    //     }, 0, 'linear', function() {
+    //         if (amount !== '') {
+    //         scroll();
+    //         }
+    //     });
+    //     }
+    //     $('.projects__heading-arrow2').hover(function() {
+    //     amount = '+=10';
+    //     scroll();
+    //     }, function() {
+    //     amount = '';
+    //     });
+    //     $('.projects__heading-arrow1').hover(function() {
+    //     amount = '-=10';
+    //     scroll();
+    //     }, function() {
+    //     amount = '';
+    //     });
 
     function scrollRight() {
-        document.querySelector('.projects__container').scrollLeft += 100;
+        // document.querySelector('.projects__container').scrollLeft += 100;
     }
-
 
     return (
         <div className="projects">
             <p className="projects__title">projects</p>
             <div className="projects__heading">
-                <div className="projects__heading-circle projects__heading-arrow1" onMouseOver={() => scrollLeft()} onMouseDown={() => scrollLeft()}>
+                <div className="projects__heading-circle projects__heading-arrow1" onMouseOver={() => scroll()}>
                     <div className="projects__heading-arrow">&lt;</div>
                 </div>
-                <div className="projects__heading-circle projects__heading-arrow2" onMouseOver={() => scrollRight()} onMouseDown={() => scrollRight()}>
+                <div className="projects__heading-circle projects__heading-arrow2" onMouseOver={() => scroll()}>
                     <div className="projects__heading-arrow">&gt;</div>
                 </div>
             </div>

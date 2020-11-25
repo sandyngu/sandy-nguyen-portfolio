@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
+import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
 
 function Main() {
@@ -8,6 +9,7 @@ function Main() {
         <div className="main">
             <Header />
             <Hero />
+            <AboutMe />
             <Projects />
         </div>
     )
