@@ -25,6 +25,8 @@ function AboutMe() {
                         My passion for technology extends to my hobby of playing PC games in my 
                         spare time -- particularly Valorant and League of Legends.
 
+                        <br/><br/><q className="aboutme__text aboutme__text-quote">Dream it. Believe it. Build it.</q>
+
                         <br/><br/>Below is a showcase of the various projects I was able to complete. 
                         Don't hesitate to get in touch with me through LinkedIn, GitHub or e-mail!
                     </p>

@@ -9,7 +9,7 @@ function Hero() {
             <div className="hero__box">
                 <img src={Polaroid} alt="Polaroid" className="hero__polaroid"/>
                 <img src={ProfilePic} alt="Profile Pic" className="hero__profile"/>
-                <p className="hero__polaroid-text">hey, look it's me!</p>
+                <p className="hero__polaroid-text">hey look, it's me!</p>
                 <p className="hero__name">Sandy Nguyen</p>
                 <p className="hero__text">full-stack web developer.</p>
             </div>

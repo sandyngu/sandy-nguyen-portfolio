@@ -1,7 +1,7 @@
 @import '../../partials/global';
 
 .aboutme {
-    background-image: url('../../assets/images/brick.png');
+    background-image: url('../../assets/images/brick2.png');
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: 100% 100%;
@@ -57,13 +57,23 @@
         position: absolute;
         width: 84%;
         height: 56vw;
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(0, 0, 0, 0.3);
     }
     &__text {
         font-size: 2.2vw;
         margin: 0;
         width: 97%;
         text-align: left;
+        color: white;
+
+        &-quote {
+            font-style: italic;
+            font-family: 'Handletters';
+            font-weight: bold;
+            letter-spacing: 0.3vw;
+            font-size: 3vw;
+            margin-left: 10%;
+        }
     }
     &__greeting {
         margin: 3% 0;
