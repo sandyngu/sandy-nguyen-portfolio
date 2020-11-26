@@ -29,8 +29,19 @@
         position: absolute;
 
         &1 {
-            top: 70%;
-            left: 25%;
+            top: 72%;
+            left: 20%;
+            transform: rotate(25deg);
+        }
+        &2 {
+            top: 55%;
+            left: 10%;
+            transform: rotate(-15deg);
+        }
+        &3 {
+            top: 40%;
+            left: 20%;
+            transform: rotate(15deg);
         }
     }
     &__bio {

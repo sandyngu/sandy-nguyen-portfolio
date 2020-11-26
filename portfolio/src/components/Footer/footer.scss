@@ -1,0 +1,129 @@
+@import '../../partials/global';
+
+a {
+    text-decoration: none;
+}
+.footer {
+    background-color: rgba(0,0,0,0.05);
+    margin: 0;
+    
+    &__nav {
+        
+        &-list {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0;
+            
+            &-item {
+                color: black;
+                font-size: 2vw;
+                transition: 0.5s ease-in-out;
+                display: flex;
+
+                &--symbol {
+                    font-size: 1.5vw;
+                    margin-top: 9%;
+                }
+                &--logo {
+                    width: 8%;
+                    height: 8%;
+                    margin-top: 2.5%;
+                }
+                &--logo2 {
+                    width: 10%;
+                    height: 10%;
+                    margin-top: 4%;
+                }
+
+                &1, &2, &3 {
+                    @extend .footer__nav-list-item;
+                }
+
+                &:hover {
+                    animation: linkHover 0.9s linear;
+                    letter-spacing: 0.2vw;
+                }
+
+                &--left {
+                    transform: none;
+
+                    &1, &2, &3 {
+                        @extend .footer__nav-list-item--left;
+                    }
+                }
+
+                &--hover {
+                    padding: 0 1vw;
+                    transition: 0.75s ease;
+
+                    &1 {
+                        @extend .footer__nav-list-item--hover;
+                        transform: rotate(-90deg);
+                        margin-top: 2%;
+                    }
+                    &2 {
+                        @extend .footer__nav-list-item--hover;
+                        transform: rotate(90deg); 
+                        margin-top: 4.5%;
+                    }
+                }
+
+                &-line {
+
+                    &1 {
+                        &--move {
+                            animation: 1s line 1;
+                            transform: rotate(160deg) translate(-1.97vw, 0vw);
+                        }
+                    }
+                    &2 {
+                        position: absolute;
+                        margin-left: 7.15%;
+                        display: none;
+                        
+                        &--move {
+                            animation: 1s line2;
+                            display: block;
+                            transform: rotate(-200deg) translate(5.9vw, 2.2vw);
+                        }
+                    }
+                    &3 {
+                        &--move {
+                            animation: 1s line3;
+                            transform: rotate(160deg) translate(-2.05vw, 0vw);
+                        }
+                    }
+                    &4 {
+                        position: absolute;
+                        margin-left: 6.05%;
+                        display: none;
+                        
+                        &--move {
+                            animation: 1s line4;
+                            display: block;
+                            transform: rotate(-200deg) translate(4.87vw, 1.85vw);
+                        }
+                    }
+                    &5 {
+                        &--move {
+                            animation: 1s line5;
+                            transform: rotate(160deg) translate(-2.04vw, 0vw);
+                        }
+                    }
+                    &6 {
+                        position: absolute;
+                        margin-left: 5.95%;
+                        display: none;
+
+                        &--move {
+                            animation: 1s line6;
+                            display: block;
+                            transform: rotate(-200deg) translate(4.77vw, 1.8vw);
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

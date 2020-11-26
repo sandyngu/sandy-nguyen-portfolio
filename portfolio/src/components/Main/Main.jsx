@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import AboutMe from '../AboutMe/AboutMe';
 import Projects from '../Projects/Projects';
+import Footer from '../Footer/Footer';
 
 function Main() {
     return (
@@ -11,6 +12,7 @@ function Main() {
             <Hero />
             <AboutMe />
             <Projects />
+            <Footer />
         </div>
     )
 }

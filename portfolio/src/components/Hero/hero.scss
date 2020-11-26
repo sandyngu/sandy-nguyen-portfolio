@@ -40,6 +40,16 @@
         position: absolute;
         left: 10%;
         z-index: 1;
+
+        &-text {
+            position: absolute;
+            transform: rotate(-10deg);
+            font-family: 'Arnie';
+            font-size: 1.5vw;
+            left: 15%;
+            top: 67.5%;
+            z-index: 1;
+        }
     }
     &__profile {
         position: absolute;
