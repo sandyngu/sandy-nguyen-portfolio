@@ -39,13 +39,7 @@ a {
                 &--left {
                     transform: none;
 
-                    &1 {
-                        @extend .header__nav-list-item--left;
-                    }
-                    &2 {
-                        @extend .header__nav-list-item--left;
-                    }
-                    &3 {
+                    &1, &2, &3 {
                         @extend .header__nav-list-item--left;
                     }
                 }
@@ -57,11 +51,12 @@ a {
                     &1 {
                         @extend .header__nav-list-item--hover;
                         transform: rotate(-90deg);
+                        margin-top: 2%;
                     }
                     &2 {
                         @extend .header__nav-list-item--hover;
                         transform: rotate(90deg); 
-                        margin-top: 3%;
+                        margin-top: 5%;
                     }
                 }
 
@@ -70,7 +65,7 @@ a {
                     &1 {
                         &--move {
                             animation: 1s line 1;
-                            transform: rotate(160deg) translate(-2.04vw, 0vw);
+                            transform: rotate(160deg) translate(-1.97vw, 0vw);
                         }
                     }
                     &2 {
@@ -81,13 +76,13 @@ a {
                         &--move {
                             animation: 1s line2;
                             display: block;
-                            transform: rotate(-200deg) translate(5.87vw, 2.4vw);
+                            transform: rotate(-200deg) translate(5.95vw, 2.2vw);
                         }
                     }
                     &3 {
                         &--move {
                             animation: 1s line3;
-                            transform: rotate(160deg) translate(-2.1vw, 0.03vw);
+                            transform: rotate(160deg) translate(-2.05vw, 0vw);
                         }
                     }
                     &4 {
@@ -98,13 +93,13 @@ a {
                         &--move {
                             animation: 1s line4;
                             display: block;
-                            transform: rotate(-200deg) translate(4.8vw, 2.15vw);
+                            transform: rotate(-200deg) translate(4.92vw, 1.8vw);
                         }
                     }
                     &5 {
                         &--move {
                             animation: 1s line5;
-                            transform: rotate(160deg) translate(-2.08vw, 0vw);
+                            transform: rotate(160deg) translate(-2.04vw, 0vw);
                         }
                     }
                     &6 {
@@ -115,7 +110,7 @@ a {
                         &--move {
                             animation: 1s line6;
                             display: block;
-                            transform: rotate(-200deg) translate(4.66vw, 2.1vw);
+                            transform: rotate(-200deg) translate(4.77vw, 1.78vw);
                         }
                     } 
                 }
