@@ -21,13 +21,7 @@ a {
                 transition: 0.5s ease-in-out;
                 display: flex;
 
-                &1 {
-                    @extend .header__nav-list-item;
-                }
-                &2 {
-                    @extend .header__nav-list-item;
-                }
-                &3 {
+                &1, &2, &3 {
                     @extend .header__nav-list-item;
                 }
 
@@ -56,7 +50,7 @@ a {
                     &2 {
                         @extend .header__nav-list-item--hover;
                         transform: rotate(90deg); 
-                        margin-top: 5%;
+                        margin-top: 4.5%;
                     }
                 }
 
@@ -76,7 +70,7 @@ a {
                         &--move {
                             animation: 1s line2;
                             display: block;
-                            transform: rotate(-200deg) translate(5.95vw, 2.2vw);
+                            transform: rotate(-200deg) translate(5.9vw, 2.2vw);
                         }
                     }
                     &3 {
@@ -93,7 +87,7 @@ a {
                         &--move {
                             animation: 1s line4;
                             display: block;
-                            transform: rotate(-200deg) translate(4.92vw, 1.8vw);
+                            transform: rotate(-200deg) translate(4.87vw, 1.85vw);
                         }
                     }
                     &5 {
@@ -110,7 +104,7 @@ a {
                         &--move {
                             animation: 1s line6;
                             display: block;
-                            transform: rotate(-200deg) translate(4.77vw, 1.78vw);
+                            transform: rotate(-200deg) translate(4.77vw, 1.8vw);
                         }
                     } 
                 }
