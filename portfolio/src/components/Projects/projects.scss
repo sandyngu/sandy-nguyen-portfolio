@@ -40,12 +40,9 @@
         height: 4.8vw;
         background: rgba(255, 255, 255, 0.4);
     }
-
     &__container {
         overflow-x: auto;
-        overflow: hidden;
         height: 35vw;
-        scrollbar-width: none;
 
         &::-webkit-scrollbar {
             display: none;
@@ -66,7 +63,7 @@
         width: 16.9vw;
         height: 11.2vw;
         margin-left: -17.6%;
-        top: 9.6%;
+        top: 7%;
 
         &3 {
             display: none;
@@ -82,9 +79,8 @@
                 display: block;
             }
         }
-
         &-container {
-            position: relative;
+            position: absolute;
             margin: -3.8% -5%;
             display: flex;
             width: 100%;

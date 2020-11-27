@@ -48,9 +48,9 @@ a {
                         margin-top: 2%;
                     }
                     &2 {
-                        @extend .header__nav-list-item--hover;
                         transform: rotate(90deg); 
                         margin-top: 4.5%;
+                        transition: 0.75s ease;
                     }
                 }
 
@@ -59,7 +59,7 @@ a {
                     &1 {
                         &--move {
                             animation: 1s line 1;
-                            transform: rotate(160deg) translate(-1.97vw, 0vw);
+                            transform: rotate(160deg) translate(-1.1vw, 0.3vw);
                         }
                     }
                     &2 {
@@ -76,7 +76,7 @@ a {
                     &3 {
                         &--move {
                             animation: 1s line3;
-                            transform: rotate(160deg) translate(-2.05vw, 0vw);
+                            transform: rotate(160deg) translate(-1.1vw, 0.3vw);
                         }
                     }
                     &4 {
@@ -87,13 +87,13 @@ a {
                         &--move {
                             animation: 1s line4;
                             display: block;
-                            transform: rotate(-200deg) translate(4.87vw, 1.85vw);
+                            transform: rotate(-200deg) translate(4.79vw, 1.85vw);
                         }
                     }
                     &5 {
                         &--move {
                             animation: 1s line5;
-                            transform: rotate(160deg) translate(-2.04vw, 0vw);
+                            transform: rotate(160deg) translate(-1.1vw, 0.3vw);
                         }
                     }
                     &6 {
@@ -104,7 +104,7 @@ a {
                         &--move {
                             animation: 1s line6;
                             display: block;
-                            transform: rotate(-200deg) translate(4.77vw, 1.8vw);
+                            transform: rotate(-200deg) translate(4.73vw, 1.9vw);
                         }
                     } 
                 }
