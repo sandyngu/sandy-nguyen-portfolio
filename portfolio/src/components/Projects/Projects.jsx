@@ -38,56 +38,22 @@ import './projects.scss';
 
 function Projects() {
 
-    // function scroll() {
-    //     // document.querySelector('.projects__container').scrollLeft -= 100;
-    //     let box = $(".projects__container"), x;
-    //         $(".projects__heading-circle").hover(function() {
-    //         if ($(this).hasClass("projects__heading-arrow2")) {
-    //             x = '+=10';
-    //             box.animate({
-    //                 scrollLeft: x,
-    //             }, 0, 'linear')
-    //         } else {
-    //             x = '-=10';
-    //             box.animate({
-    //                 scrollLeft: x,
-    //             }, 0, 'linear')
-    //         }
-    //         })
-    // }
+    function scrollLeft() {
+        document.querySelector('.projects__container').scrollLeft -= 620;
+    };
+
+    function scrollRight() {
+        document.querySelector('.projects__container').scrollLeft += 620;
+    };
 
     // function changeBorder() {
     //     e.target.active
     // }
 
-    // let amount = '';
-    
-    // function scroll() {
-    //     $('.projects__container').animate({
-    //         scrollLeft: amount
-    //     }, 0, 'linear', function() {
-    //         if (amount !== '') {
-    //         scroll();
-    //         }
-    //     });
-    //     }
-    //     $('.projects__heading-arrow2').hover(function() {
-    //     amount = '+=10';
-    //     scroll();
-    //     }, function() {
-    //     amount = '';
-    //     });
-    //     $('.projects__heading-arrow1').hover(function() {
-    //     amount = '-=10';
-    //     scroll();
-    //     }, function() {
-    //     amount = '';
-    //     });
-
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 5,
+            scrollStep = 2,
             parent = $('.projects__container');
     
         //Start the scrolling process
@@ -95,15 +61,12 @@ function Projects() {
             let data = $(this).data('scrollModifier'),
                 direction = parseInt(data, 10);        
     
-            $(this).addClass('active');
-    
             startScrolling(direction, scrollStep);
         });
     
         //Kill the scrolling
         $('.projects__heading-circle').on('mouseleave', function () {
             stopScrolling();
-            $(this).removeClass('active');
         });
     
         //Actual handling of the scrolling
@@ -113,7 +76,7 @@ function Projects() {
                     let newOffset = parent.scrollLeft() + (scrollStep * modifier);
     
                     parent.scrollLeft(newOffset);
-                }, 10);
+                }, 10, 'linear');
             }
         }
     
@@ -124,18 +87,14 @@ function Projects() {
     
     }());
 
-    // function scrollRight() {
-    //     // document.querySelector('.projects__container').scrollLeft += 100;
-    // }
-
     return (
         <div className="projects">
             <p className="projects__title">projects</p>
             <div className="projects__heading">
-                <div className="projects__heading-circle projects__heading-arrow1" data-scroll-modifier='-1'>
+                <div className="projects__heading-circle projects__heading-arrow1" data-scroll-modifier='-1' onClick={() => scrollLeft()}>
                     <div className="projects__heading-arrow">&lt;</div>
                 </div>
-                <div className="projects__heading-circle projects__heading-arrow2" data-scroll-modifier='1'>
+                <div className="projects__heading-circle projects__heading-arrow2" data-scroll-modifier='1' onClick={() => scrollRight()}>
                     <div className="projects__heading-arrow">&gt;</div>
                 </div>
             </div>
