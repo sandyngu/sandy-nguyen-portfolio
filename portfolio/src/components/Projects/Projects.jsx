@@ -55,7 +55,7 @@ function Projects() {
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 2,
+            scrollStep = 1,
             parent = $('.projects__container');
     
         //Start the scrolling process
@@ -119,7 +119,10 @@ function Projects() {
                         <p className="projects__text projects__text-two">capstone: nursimulator.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Capstone Project: NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Architected a nursing simulation web application using React, HTML, CSS/Sass, JavaScript, NodeJS, Express, Bookshelf, Knex and MySQL database.
+                            Provided a smooth desktop experience using single-page app technologies with client-side assets and code managed through webpack.
+                            Modals used for gaming components; assets enhanced with Photoshop.
+                            Successful deployment with Heroku.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
@@ -130,7 +133,9 @@ function Projects() {
                         <p className="projects__text projects__text-two">adidas hackathon.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">x adidas Hackathon: #FromTrashToTrainers</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Provided 24 hours to create an innovative digital solution to address the future success of eCommerce.
+                            Worked collaboratively with digital marketing, data science, and UX design to create a sustainability-driven solution by providing customers with sustainable facts on consumer products and carbon emissions contributed during shipment process.
+                            Emphasized utilization of livestreaming to digitally market on social media platforms.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
@@ -141,7 +146,10 @@ function Projects() {
                         <p className="projects__text projects__text-two">instock collaborative.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">InStock Collaborative</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Worked collaboratively on a team with 5 developers to create a warehouse inventory CRUD React app based on mockups provided on Figma.
+                            Used an agile development methodology, leveraging JIRA to track progress and milestones for a 1-week sprint.
+                            Used a combination of all learned tech stacks, and usage of API documentation to handle server requests.
+                            Managed GitHub pull requests for standardizing peer code reviews.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
@@ -152,7 +160,7 @@ function Projects() {
                         <p className="projects__text projects__text-two">pair programming.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Baby Got Track</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Collaborated with another developer to architect a fully-functioning 'guess-the-next-lyric' music React application with back-end server using React Hooks, NodeJS & Express.</p>
                         </ProjectCardPopup>
                     </ProjectCard> 
                     <ProjectCard>
@@ -163,7 +171,7 @@ function Projects() {
                         <p className="projects__text">brainflix.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Brainflix</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">A responsive, single-page YouTube-inspired React application, constructing reusable components and accessing API for data. Use of React routing & React lifecycle methods.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
@@ -174,7 +182,7 @@ function Projects() {
                         <p className="projects__text">band site.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">BandSite</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Created a 2-page responsive biographical website implementing JavaScript & media queries. Utilized HTTP requests using Axios to retrieve data from an API.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
@@ -185,7 +193,7 @@ function Projects() {
                         <p className="projects__text">travel site.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">TravelSite</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Provided 24 hours to build a 4-page website utilizing provided mock-ups with form implementation. Utilized HTML, CSS & Flexbox.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard /*onClick={()=>changeBorder()}*/>
@@ -196,7 +204,7 @@ function Projects() {
                         <p className="projects__text">coffee shop.</p>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Coffee Shop</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                            <p className="project__card-popup-description">Introductory project. A 2-page website built utilizing provided mock-ups, with animation implementation. Utilized HTML, CSS & Flexbox.</p>
                         </ProjectCardPopup>
                     </ProjectCard>               
                 </div>

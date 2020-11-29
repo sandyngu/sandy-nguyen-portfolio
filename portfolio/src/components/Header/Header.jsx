@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/images/logo.png';
 import './header.scss';
 
 function Header() {
@@ -47,6 +48,7 @@ function Header() {
     return (
         <div className="header">
             <nav className="header__nav">
+                <img src={Logo} alt="Logo" className="header__nav-list-logo"/>
                 <ul className="header__nav-list">
                     <Link to='/' className="header__nav-link">
                         <li className="link1 header__nav-list-item1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
