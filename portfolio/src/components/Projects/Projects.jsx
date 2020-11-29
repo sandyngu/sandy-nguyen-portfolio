@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import $ from 'jquery';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import ProjectCardPopup from '../ProjectCardPopup/ProjectCardPopup';
@@ -37,6 +37,8 @@ import ArrowBorder from '../../assets/images/arrow-border.png';
 import './projects.scss';
 
 function Projects() {
+
+    const [border, setBorder] = useState(0);
 
     function scrollLeft() {
         document.querySelector('.projects__container').scrollLeft -= 620;
@@ -113,90 +115,90 @@ function Projects() {
                         <img src={NurSimulator6} alt="NurSimulator" className="projects__image projects__image6"/>
                         <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
                         <img src={NurSimulator8} alt="NurSimulator" className="projects__image projects__image8"/>
-                        <img src={ArrowBorder} alt="Border" className="projects__border-stars"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? Border : ArrowBorder} alt="Border" className="projects__border projects__border"/>
                         <p className="projects__text projects__text-two">capstone: nursimulator.</p>
                         <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
+                            <p className="project__card-popup-description-title">Capstone Project: NurSimulator</p>
+                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                        </ProjectCardPopup>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <img src={Adidas} alt="Adidas" className="projects__image projects__image9"/>
+                        <img src={Adidas2} alt="Adidas" className="projects__image projects__image10"/>
+                        <img src={Adidas3} alt="Adidas" className="projects__image projects__image11"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
+                        <p className="projects__text projects__text-two">adidas hackathon.</p>
+                        <ProjectCardPopup>
+                            <p className="project__card-popup-description-title">x adidas Hackathon: #FromTrashToTrainers</p>
+                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                        </ProjectCardPopup>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <img src={Instock} alt="Instock" className="projects__image projects__image12"/>
+                        <img src={Instock2} alt="Instock" className="projects__image projects__image13"/>
+                        <img src={Instock3} alt="Instock" className="projects__image projects__image14"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
+                        <p className="projects__text projects__text-two">instock collaborative.</p>
+                        <ProjectCardPopup>
+                            <p className="project__card-popup-description-title">InStock Collaborative</p>
+                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                        </ProjectCardPopup>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <img src={Pair} alt="Baby Got Track" className="projects__image projects__image15"/>
+                        <img src={Pair2} alt="Baby Got Track" className="projects__image projects__image16"/>
+                        <img src={Pair3} alt="Baby Got Track" className="projects__image projects__image17"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
+                        <p className="projects__text projects__text-two">pair programming.</p>
+                        <ProjectCardPopup>
+                            <p className="project__card-popup-description-title">Baby Got Track</p>
+                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                        </ProjectCardPopup>
+                    </ProjectCard> 
+                    <ProjectCard>
+                        <img src={Brainflix} alt="Brainflix" className="projects__image projects__image18"/>
+                        <img src={Brainflix2} alt="Brainflix" className="projects__image projects__image19"/>
+                        <img src={Brainflix3} alt="Brainflix" className="projects__image projects__image20"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
+                        <p className="projects__text">brainflix.</p>
+                        <ProjectCardPopup>
+                            <p className="project__card-popup-description-title">Brainflix</p>
+                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                        </ProjectCardPopup>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <img src={BandSite} alt="Band Site" className="projects__image projects__image21"/>
+                        <img src={BandSite2} alt="Band Site" className="projects__image projects__image22"/>
+                        <img src={BandSite3} alt="Band Site" className="projects__image projects__image23"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
+                        <p className="projects__text">band site.</p>
+                        <ProjectCardPopup>
+                            <p className="project__card-popup-description-title">BandSite</p>
+                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
+                        </ProjectCardPopup>
+                    </ProjectCard>
+                    <ProjectCard>
+                        <img src={TravelSite} alt="Travel Site" className="projects__image projects__image24"/>
+                        <img src={TravelSite2} alt="Travel Site" className="projects__image projects__image25"/>
+                        <img src={TravelSite3} alt="Travel Site" className="projects__image projects__image26"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
+                        <p className="projects__text">travel site.</p>
+                        <ProjectCardPopup>
+                            <p className="project__card-popup-description-title">TravelSite</p>
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard /*onClick={()=>changeBorder()}*/>
-                        <img src={CoffeeShop} alt="Coffee Shop" className="projects__image projects__image1"/>
-                        <img src={CoffeeShop2} alt="Coffee Shop" className="projects__image projects__image2"/>
-                        <img src={CoffeeShop3} alt="Coffee Shop" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
+                        <img src={CoffeeShop} alt="Coffee Shop" className="projects__image projects__image27"/>
+                        <img src={CoffeeShop2} alt="Coffee Shop" className="projects__image projects__image28"/>
+                        <img src={CoffeeShop3} alt="Coffee Shop" className="projects__image projects__image29"/>
+                        <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <p className="projects__text">coffee shop.</p>
                         <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
+                            <p className="project__card-popup-description-title">Coffee Shop</p>
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <img src={TravelSite} alt="Travel Site" className="projects__image projects__image1"/>
-                        <img src={TravelSite2} alt="Travel Site" className="projects__image projects__image2"/>
-                        <img src={TravelSite3} alt="Travel Site" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">travel site.</p>
-                        <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
-                        </ProjectCardPopup>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <img src={BandSite} alt="Band Site" className="projects__image projects__image1"/>
-                        <img src={BandSite2} alt="Band Site" className="projects__image projects__image2"/>
-                        <img src={BandSite3} alt="Band Site" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">band site.</p>
-                        <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
-                        </ProjectCardPopup>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <img src={Brainflix} alt="Brainflix" className="projects__image projects__image1"/>
-                        <img src={Brainflix2} alt="Brainflix" className="projects__image projects__image2"/>
-                        <img src={Brainflix3} alt="Brainflix" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">brainflix.</p>
-                        <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
-                        </ProjectCardPopup>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <img src={Pair} alt="Baby Got Track" className="projects__image projects__image1"/>
-                        <img src={Pair2} alt="Baby Got Track" className="projects__image projects__image2"/>
-                        <img src={Pair3} alt="Baby Got Track" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text projects__text-two">pair programming.</p>
-                        <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
-                        </ProjectCardPopup>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <img src={Instock} alt="Instock" className="projects__image projects__image1"/>
-                        <img src={Instock2} alt="Instock" className="projects__image projects__image2"/>
-                        <img src={Instock3} alt="Instock" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text projects__text-two">instock collaborative.</p>
-                        <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
-                        </ProjectCardPopup>
-                    </ProjectCard>
-                    <ProjectCard>
-                        <img src={Adidas} alt="Adidas" className="projects__image projects__image1"/>
-                        <img src={Adidas2} alt="Adidas" className="projects__image projects__image2"/>
-                        <img src={Adidas3} alt="Adidas" className="projects__image projects__image3"/>
-                        <img src={Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text projects__text-two">adidas hackathon.</p>
-                        <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">NurSimulator</p>
-                            <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
-                        </ProjectCardPopup>
-                    </ProjectCard>
+                    </ProjectCard>               
                 </div>
             </div>
         </div>

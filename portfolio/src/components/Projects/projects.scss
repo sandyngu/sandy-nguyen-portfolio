@@ -44,9 +44,9 @@
         overflow: auto;
         height: 45vw;
 
-        // &::-webkit-scrollbar {
-        //     display: none;
-        // }
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     &__line {
         height: 15vw;
@@ -90,7 +90,7 @@
     &__text {
         position: absolute;
         font-family: 'Handletters';
-        margin-left: 7%;
+        margin-left: 8%;
         margin-top: -3.75%;
         font-size: 2.5vw;
         letter-spacing: 0.1vw;
@@ -113,6 +113,10 @@
             z-index: 2;
             filter: brightness(0) opacity(0.8);
 
+            &:hover {
+                cursor: pointer;
+            }
+
         &-stars {
             width: 22vw;
             height: 21vw;
@@ -122,6 +126,10 @@
             z-index: 2;
             filter: brightness(0);
             animation: pulse 2s infinite;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
