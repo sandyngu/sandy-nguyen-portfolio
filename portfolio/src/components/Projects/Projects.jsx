@@ -55,13 +55,13 @@ function Projects() {
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 1,
+            scrollStep = 5,
             parent = $('.projects__container');
     
         //Start the scrolling process
         $('.projects__heading-circle').on('mouseenter', function () {
             let data = $(this).data('scrollModifier'),
-                direction = parseInt(data, 10);        
+                direction = parseInt(data, 5);        
     
             startScrolling(direction, scrollStep);
         });
@@ -116,7 +116,17 @@ function Projects() {
                         <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
                         <img src={NurSimulator8} alt="NurSimulator" className="projects__image projects__image8"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? Border : ArrowBorder} alt="Border" className="projects__border projects__border"/>
-                        <p className="projects__text projects__text-two">capstone: nursimulator.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text projects__text-two">capstone: nursimulator.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Capstone Project: NurSimulator</p>
                             <p className="project__card-popup-description">Architected a nursing simulation web application using React, HTML, CSS/Sass, JavaScript, NodeJS, Express, Bookshelf, Knex and MySQL database.
@@ -130,7 +140,17 @@ function Projects() {
                         <img src={Adidas2} alt="Adidas" className="projects__image projects__image10"/>
                         <img src={Adidas3} alt="Adidas" className="projects__image projects__image11"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text projects__text-two">adidas hackathon.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text projects__text-two">adidas hackathon.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">x adidas Hackathon: #FromTrashToTrainers</p>
                             <p className="project__card-popup-description">Provided 24 hours to create an innovative digital solution to address the future success of eCommerce.
@@ -143,7 +163,17 @@ function Projects() {
                         <img src={Instock2} alt="Instock" className="projects__image projects__image13"/>
                         <img src={Instock3} alt="Instock" className="projects__image projects__image14"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text projects__text-two">instock collaborative.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text projects__text-two">instock collaborative.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">InStock Collaborative</p>
                             <p className="project__card-popup-description">Worked collaboratively on a team with 5 developers to create a warehouse inventory CRUD React app based on mockups provided on Figma.
@@ -157,7 +187,17 @@ function Projects() {
                         <img src={Pair2} alt="Baby Got Track" className="projects__image projects__image16"/>
                         <img src={Pair3} alt="Baby Got Track" className="projects__image projects__image17"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text projects__text-two">pair programming.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text projects__text-two">pair programming.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Baby Got Track</p>
                             <p className="project__card-popup-description">Collaborated with another developer to architect a fully-functioning 'guess-the-next-lyric' music React application with back-end server using React Hooks, NodeJS & Express.</p>
@@ -168,7 +208,17 @@ function Projects() {
                         <img src={Brainflix2} alt="Brainflix" className="projects__image projects__image19"/>
                         <img src={Brainflix3} alt="Brainflix" className="projects__image projects__image20"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">brainflix.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text">brainflix.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Brainflix</p>
                             <p className="project__card-popup-description">A responsive, single-page YouTube-inspired React application, constructing reusable components and accessing API for data. Use of React routing & React lifecycle methods.</p>
@@ -179,7 +229,17 @@ function Projects() {
                         <img src={BandSite2} alt="Band Site" className="projects__image projects__image22"/>
                         <img src={BandSite3} alt="Band Site" className="projects__image projects__image23"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">band site.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text">band site.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">BandSite</p>
                             <p className="project__card-popup-description">Created a 2-page responsive biographical website implementing JavaScript & media queries. Utilized HTTP requests using Axios to retrieve data from an API.</p>
@@ -190,7 +250,17 @@ function Projects() {
                         <img src={TravelSite2} alt="Travel Site" className="projects__image projects__image25"/>
                         <img src={TravelSite3} alt="Travel Site" className="projects__image projects__image26"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">travel site.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text">travel site.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">TravelSite</p>
                             <p className="project__card-popup-description">Provided 24 hours to build a 4-page website utilizing provided mock-ups with form implementation. Utilized HTML, CSS & Flexbox.</p>
@@ -201,7 +271,17 @@ function Projects() {
                         <img src={CoffeeShop2} alt="Coffee Shop" className="projects__image projects__image28"/>
                         <img src={CoffeeShop3} alt="Coffee Shop" className="projects__image projects__image29"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
-                        <p className="projects__text">coffee shop.</p>
+                        <div className="project__card-container">
+                            <div className="project__card-circle-container">
+                                <div className="project__card-circle projects__card-arrow1">
+                                    <div className="project__card-arrow">&lt;</div>
+                                </div>
+                                <div className="project__card-circle projects__card-arrow2">
+                                    <div className="project__card-arrow">&gt;</div>
+                                </div>
+                            </div>
+                            <p className="projects__text">coffee shop.</p>
+                        </div>
                         <ProjectCardPopup>
                             <p className="project__card-popup-description-title">Coffee Shop</p>
                             <p className="project__card-popup-description">Introductory project. A 2-page website built utilizing provided mock-ups, with animation implementation. Utilized HTML, CSS & Flexbox.</p>

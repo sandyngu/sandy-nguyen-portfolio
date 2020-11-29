@@ -50,7 +50,7 @@
     }
     &__line {
         height: 15vw;
-        width: 120vw;
+        width: 50%;
         z-index: 2;
 
         &-container {
@@ -81,7 +81,7 @@
         }
         &-container {
             position: relative;
-            margin: -3.8% -5%;
+            margin: -3.85% -5%;
             display: flex;
             width: 100%;
             z-index: 0;
@@ -90,7 +90,7 @@
     &__text {
         position: absolute;
         font-family: 'Handletters';
-        margin-left: 8%;
+        margin-left: 135%;
         margin-top: -3.75%;
         font-size: 2.5vw;
         letter-spacing: 0.1vw;
