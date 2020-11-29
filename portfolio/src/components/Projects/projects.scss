@@ -41,16 +41,16 @@
         background: rgba(255, 255, 255, 0.4);
     }
     &__container {
-        overflow-x: auto;
-        height: 35vw;
+        overflow: auto;
+        height: 45vw;
 
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
     }
     &__line {
         height: 15vw;
-        width: 100vw;
+        width: 102vw;
         z-index: 2;
 
         &-container {
@@ -63,7 +63,7 @@
         width: 16.9vw;
         height: 11.2vw;
         margin-left: -17.6%;
-        top: 7%;
+        top: 5%;
 
         &3 {
             display: none;
@@ -80,7 +80,7 @@
             }
         }
         &-container {
-            position: absolute;
+            position: relative;
             margin: -3.8% -5%;
             display: flex;
             width: 100%;

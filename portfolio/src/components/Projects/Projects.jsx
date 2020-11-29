@@ -38,31 +38,23 @@ import './projects.scss';
 
 function Projects() {
 
-    function scroll() {
-        // document.querySelector('.projects__container').scrollLeft -= 100;
-        let box = $(".projects__container"), x;
-            $(".projects__heading-circle").hover(function() {
-            if ($(this).hasClass("projects__heading-arrow2")) {
-                x = '+=10';
-                box.animate({
-                    scrollTop: x,
-                }, 100, 'linear', function() {
-                    if (x !== '') {
-                      x = '';
-                    }
-                  })
-            } else {
-                x = '-=10';
-                box.animate({
-                    scrollTop: x,
-                }, 100, 'linear', function() {
-                    if (x !== '') {
-                      x = '';
-                    }
-                  })
-            }
-            })
-    }
+    // function scroll() {
+    //     // document.querySelector('.projects__container').scrollLeft -= 100;
+    //     let box = $(".projects__container"), x;
+    //         $(".projects__heading-circle").hover(function() {
+    //         if ($(this).hasClass("projects__heading-arrow2")) {
+    //             x = '+=10';
+    //             box.animate({
+    //                 scrollLeft: x,
+    //             }, 0, 'linear')
+    //         } else {
+    //             x = '-=10';
+    //             box.animate({
+    //                 scrollLeft: x,
+    //             }, 0, 'linear')
+    //         }
+    //         })
+    // }
 
     // function changeBorder() {
     //     e.target.active
@@ -92,18 +84,58 @@ function Projects() {
     //     amount = '';
     //     });
 
-    function scrollRight() {
-        // document.querySelector('.projects__container').scrollLeft += 100;
-    }
+    (function () {
+
+        let scrollHandle = 0,
+            scrollStep = 5,
+            parent = $('.projects__container');
+    
+        //Start the scrolling process
+        $('.projects__heading-circle').on('mouseenter', function () {
+            let data = $(this).data('scrollModifier'),
+                direction = parseInt(data, 10);        
+    
+            $(this).addClass('active');
+    
+            startScrolling(direction, scrollStep);
+        });
+    
+        //Kill the scrolling
+        $('.projects__heading-circle').on('mouseleave', function () {
+            stopScrolling();
+            $(this).removeClass('active');
+        });
+    
+        //Actual handling of the scrolling
+        function startScrolling(modifier, step) {
+            if (scrollHandle === 0) {
+                scrollHandle = setInterval(function () {
+                    let newOffset = parent.scrollLeft() + (scrollStep * modifier);
+    
+                    parent.scrollLeft(newOffset);
+                }, 10);
+            }
+        }
+    
+        function stopScrolling() {
+            clearInterval(scrollHandle);
+            scrollHandle = 0;
+        }
+    
+    }());
+
+    // function scrollRight() {
+    //     // document.querySelector('.projects__container').scrollLeft += 100;
+    // }
 
     return (
         <div className="projects">
             <p className="projects__title">projects</p>
             <div className="projects__heading">
-                <div className="projects__heading-circle projects__heading-arrow1" onMouseOver={() => scroll()}>
+                <div className="projects__heading-circle projects__heading-arrow1" data-scroll-modifier='-1'>
                     <div className="projects__heading-arrow">&lt;</div>
                 </div>
-                <div className="projects__heading-circle projects__heading-arrow2" onMouseOver={() => scroll()}>
+                <div className="projects__heading-circle projects__heading-arrow2" data-scroll-modifier='1'>
                     <div className="projects__heading-arrow">&gt;</div>
                 </div>
             </div>
@@ -113,7 +145,7 @@ function Projects() {
                     <img src={Line} alt="Clothes Line" className="projects__line"/>
                 </div>
                 <div className="projects__image-container">
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={NurSimulator} alt="NurSimulator" className="projects__image projects__image1"/>
                         <img src={NurSimulator2} alt="NurSimulator" className="projects__image projects__image2"/>
                         <img src={NurSimulator3} alt="NurSimulator" className="projects__image projects__image3"/>
@@ -129,7 +161,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false' /*onClick={()=>changeBorder()}*/>
+                    <ProjectCard /*onClick={()=>changeBorder()}*/>
                         <img src={CoffeeShop} alt="Coffee Shop" className="projects__image projects__image1"/>
                         <img src={CoffeeShop2} alt="Coffee Shop" className="projects__image projects__image2"/>
                         <img src={CoffeeShop3} alt="Coffee Shop" className="projects__image projects__image3"/>
@@ -140,7 +172,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={TravelSite} alt="Travel Site" className="projects__image projects__image1"/>
                         <img src={TravelSite2} alt="Travel Site" className="projects__image projects__image2"/>
                         <img src={TravelSite3} alt="Travel Site" className="projects__image projects__image3"/>
@@ -151,7 +183,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={BandSite} alt="Band Site" className="projects__image projects__image1"/>
                         <img src={BandSite2} alt="Band Site" className="projects__image projects__image2"/>
                         <img src={BandSite3} alt="Band Site" className="projects__image projects__image3"/>
@@ -162,7 +194,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={Brainflix} alt="Brainflix" className="projects__image projects__image1"/>
                         <img src={Brainflix2} alt="Brainflix" className="projects__image projects__image2"/>
                         <img src={Brainflix3} alt="Brainflix" className="projects__image projects__image3"/>
@@ -173,7 +205,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={Pair} alt="Baby Got Track" className="projects__image projects__image1"/>
                         <img src={Pair2} alt="Baby Got Track" className="projects__image projects__image2"/>
                         <img src={Pair3} alt="Baby Got Track" className="projects__image projects__image3"/>
@@ -184,7 +216,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={Instock} alt="Instock" className="projects__image projects__image1"/>
                         <img src={Instock2} alt="Instock" className="projects__image projects__image2"/>
                         <img src={Instock3} alt="Instock" className="projects__image projects__image3"/>
@@ -195,7 +227,7 @@ function Projects() {
                             <p className="project__card-popup-description">A fun and interactive web-based browser game that simulates a nurse's journey in a 12-hour shift. Complete various nursing-related tasks in a timely manner.</p>
                         </ProjectCardPopup>
                     </ProjectCard>
-                    <ProjectCard active='false'>
+                    <ProjectCard>
                         <img src={Adidas} alt="Adidas" className="projects__image projects__image1"/>
                         <img src={Adidas2} alt="Adidas" className="projects__image projects__image2"/>
                         <img src={Adidas3} alt="Adidas" className="projects__image projects__image3"/>
