@@ -55,13 +55,13 @@ function Projects() {
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 5,
+            scrollStep = 2,
             parent = $('.projects__container');
     
         //Start the scrolling process
         $('.projects__heading-circle').on('mouseenter', function () {
             let data = $(this).data('scrollModifier'),
-                direction = parseInt(data, 5);        
+                direction = parseInt(data, 10);        
     
             startScrolling(direction, scrollStep);
         });

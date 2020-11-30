@@ -11,6 +11,7 @@ a {
         
         &-list {
             list-style-type: none;
+            position: relative;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -19,7 +20,7 @@ a {
             &-logo {
                 position: absolute;
                 left: 2%;
-                top: 0;
+                margin-top: -0.5%;
                 width: 4%;
             }
             

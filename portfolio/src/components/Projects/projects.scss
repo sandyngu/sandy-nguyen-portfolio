@@ -2,8 +2,9 @@
 
 .projects {
     margin: 1% 0;
-    background-image: url('../../assets/images/clouds.png');
+    background-image: url('../../assets/images/bulbs4.png');
     background-repeat: repeat-x;
+    background-position: bottom;
     background-size: 100% 100%;
     height: 50vw;
     width: 100%;
@@ -31,14 +32,24 @@
         }
         &-arrow {
             line-height: 4.5vw;
+
+            // &:focus {
+            //     color: red;
+            // }
+            &:active {
+                color: red;
+                offset: 10px 10px;
+            }
         }
     }
     &__title {
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin: 0; 
         width: 100%;
         height: 4.8vw;
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.3);
+        color: black;
+        font-family: 'Atalla';
     }
     &__container {
         overflow: auto;

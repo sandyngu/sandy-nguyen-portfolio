@@ -14,7 +14,13 @@ a {
             display: flex;
             justify-content: space-evenly;
             padding: 0;
-            
+
+            &-logo {
+                position: absolute;
+                left: 2%;
+                margin-top: -0.5%;
+                width: 4%;
+            }
             &-item {
                 color: black;
                 font-size: 2vw;
@@ -43,6 +49,7 @@ a {
                 &:hover {
                     animation: linkHover 0.9s linear;
                     letter-spacing: 0.2vw;
+                    margin: 0;
                 }
 
                 &--left {
@@ -61,11 +68,13 @@ a {
                         @extend .footer__nav-list-item--hover;
                         transform: rotate(-90deg);
                         margin-top: 2%;
+                        padding: 0;
                     }
                     &2 {
                         @extend .footer__nav-list-item--hover;
                         transform: rotate(90deg); 
                         margin-top: 4.5%;
+                        padding: 0;
                     }
                 }
 

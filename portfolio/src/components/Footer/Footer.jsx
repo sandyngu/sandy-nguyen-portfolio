@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import Logo from '../../assets/images/logo.png';
 import LinkedIn from '../../assets/images/linkedin.png';
 import GitHub from '../../assets/images/github.png';
 import './footer.scss';
@@ -48,6 +49,7 @@ function Footer() {
     return (
         <div className="footer">
             <nav className="footer__nav">
+                <img src={Logo} alt="Logo" className="footer__nav-list-logo"/>
                 <ul className="footer__nav-list">
                     <a href='https://www.linkedin.com/in/sandyngu/' className="footer__nav-link">
                         <li className="link1 footer__nav-list-item1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>

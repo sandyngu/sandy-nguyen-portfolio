@@ -13,7 +13,7 @@
         border-radius: 50%;
         width: 2vw;
         height: 1.5vw;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgb(180, 180, 180);
         font-size: 2vw;
         border: 0.1vw grey solid;
         margin: 18% 10% 0 0;
@@ -21,13 +21,20 @@
         &:hover {
             cursor: pointer;
             color: rgba(0, 0, 0, 0.6);
+            background-color: rgb(130, 130, 130);
         }
         &-container {
             display: flex;
         }
     }
     &-arrow {
-        margin-top: -25%;
+        margin-top: -30%;
+        color: white;
+        filter: drop-shadow(1.5px 1.5px 1px black);
+
+        &:hover {
+            color: black;
+        }
     }
     &-container {
         display: flex;
