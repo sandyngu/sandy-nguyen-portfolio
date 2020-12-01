@@ -55,7 +55,7 @@ function Projects() {
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 2,
+            scrollStep = 15,
             parent = $('.projects__container');
     
         //Start the scrolling process
@@ -90,7 +90,7 @@ function Projects() {
     }());
 
     return (
-        <div className="projects">
+        <div className="section projects" id="projects">
             <p className="projects__title">projects</p>
             <div className="projects__heading">
                 <div className="projects__heading-circle projects__heading-arrow1" data-scroll-modifier='-1' onClick={() => scrollLeft()}>
@@ -152,7 +152,7 @@ function Projects() {
                             <p className="projects__text projects__text-two">adidas hackathon.</p>
                         </div>
                         <ProjectCardPopup>
-                            <p className="project__card-popup-description-title">x adidas Hackathon: #FromTrashToTrainers</p>
+                            <p className="project__card-popup-description-title">adidas Hackathon: #FromTrashToTrainers</p>
                             <p className="project__card-popup-description">Provided 24 hours to create an innovative digital solution to address the future success of eCommerce.
                             Worked collaboratively with digital marketing, data science, and UX design to create a sustainability-driven solution by providing customers with sustainable facts on consumer products and carbon emissions contributed during shipment process.
                             Emphasized utilization of livestreaming to digitally market on social media platforms.</p>

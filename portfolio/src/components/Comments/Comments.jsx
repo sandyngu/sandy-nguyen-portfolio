@@ -3,7 +3,7 @@ import './comments.scss';
 
 function Comments() {
     return (
-        <div className="comments">
+        <div className="section comments" id="comments">
             <p className="comments__title">comments</p>
             <div className="comments__box">
 

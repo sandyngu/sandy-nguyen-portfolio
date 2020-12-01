@@ -1,8 +1,9 @@
 @import '../../partials/global';
 
 .comments {
-    background-image: url('../../assets/images/marbletile.png');
-    height: 50vw;
+    background-image: url('../../assets/images/typewriter.jpg');
+    background-size: cover;
+    height: 60vw;
     width: 100%;
 
     &__title {
@@ -12,6 +13,7 @@
         height: 4.3vw;
         background: rgba(0, 0, 0, 0.1);
         font-family: 'Atalla';
+        color: white;
     }
     &__box {
         font-size: 3vw;
@@ -22,7 +24,7 @@
         margin: 4% 8%;
         position: absolute;
         width: 84%;
-        height: 36vw;
+        height: 46vw;
         background: rgba(0, 0, 0, 0.2);
     }
 }

@@ -50,30 +50,38 @@ function Header() {
             <nav className="header__nav">
                 <img src={Logo} alt="Logo" className="header__nav-list-logo"/>
                 <ul className="header__nav-list">
-                    <Link to='/' className="header__nav-link">
+                    <a href="#aboutme" className="header__nav-link">
                         <li className="link1 header__nav-list-item1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
                             <div className="link1 header__nav-list-item--left1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> about me 
                             <span className="link1 header__nav-list-item-line1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link1 header__nav-list-item-line2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link1 header__nav-list-item--right1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
-                    </Link>
-                    <Link to='/' className="header__nav-link">
+                    </a>
+                    <a href="#projects" className="header__nav-link">
                         <li className="link2 header__nav-list-item2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
                             <div className="link2 header__nav-list-item--left2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> projects 
                             <span className="link2 header__nav-list-item-line3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link2 header__nav-list-item-line4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link2 header__nav-list-item--right2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
-                    </Link>
-                    <Link to='/' className="header__nav-link">
+                    </a>
+                    <a href="#comments" className="header__nav-link">
                         <li className="link3 header__nav-list-item3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
-                            <div className="link3 header__nav-list-item--left3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> contact 
+                            <div className="link3 header__nav-list-item--left3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> comments 
                             <span className="link3 header__nav-list-item-line5" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link3 header__nav-list-item-line6" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link3 header__nav-list-item--right3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
-                    </Link>
+                    </a>
+                    <a href="#contact" className="header__nav-link">
+                        <li className="link4 header__nav-list-item4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
+                            <div className="link4 header__nav-list-item--left4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> contact 
+                            <span className="link4 header__nav-list-item-line7" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
+                            <span className="link4 header__nav-list-item-line8" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
+                            <div className="link4 header__nav-list-item--right4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
+                        </li>
+                    </a>
                 </ul>
             </nav>
         </div>
