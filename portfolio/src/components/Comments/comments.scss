@@ -17,6 +17,13 @@
     }
     &__box {
         display: flex;
+
+        &-form {
+            position: absolute;
+            margin-top: 8%;
+            width: 50%;
+            z-index: 1;
+        }
         
         &-comments {
             font-size: 3vw;
@@ -29,6 +36,37 @@
             width: 84%;
             height: 36vw;
             background: rgba(0, 0, 0, 0.2);
+        }
+    }
+    &__form {
+        width: 100%;
+
+        &-label {
+            color: white;
+            font-size: 2vw;
+            text-align: left;
+        }
+        &-input {
+            border-radius: 0.2vw;
+            width: 50%;
+            font-size: 1.2vw;
+            font-family: 'Arnie';
+            padding: 0.8vw;
+
+            &--name {
+                height: 1vw;
+            }
+            &--comment {
+                height: 8vw;
+                resize: none;
+            }
+        }
+        &-button {
+            width: 53.5%;
+            padding: 0.5vw;
+            font-family: 'Arnie';
+            font-size: 1.5vw;
+            border-radius: 0.2vw;
         }
     }
     &__background {
@@ -46,6 +84,15 @@
         &::-webkit-scrollbar {
             display: none;
         }
+    }
+    &__heading {
+        position: absolute;
+        color: white;
+        font-size: 4vw;
+        font-family: 'Atalla';
+        margin-top: 5.5%;
+        margin-left: 50%;
+        z-index: 1;
     }
     &__text {
         font-size: 1.3vw;

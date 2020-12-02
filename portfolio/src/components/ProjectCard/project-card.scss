@@ -23,14 +23,18 @@
             color: rgba(0, 0, 0, 0.6);
             background-color: rgb(150, 150, 150);
         }
+        &:focus {
+            outline: none;
+        }
         &-container {
             display: flex;
         }
     }
     &-arrow {
-        margin-top: -30%;
+        margin-top: -70%;
         color: white;
         filter: drop-shadow(1.5px 1.5px 1px black);
+        font-family: 'Arnie';
 
         &:hover {
             color: black;

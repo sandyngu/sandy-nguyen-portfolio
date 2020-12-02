@@ -55,13 +55,13 @@ function Projects() {
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 15,
+            scrollStep = 5,
             parent = $('.projects__container');
     
         //Start the scrolling process
         $('.projects__heading-circle').on('mouseenter', function () {
             let data = $(this).data('scrollModifier'),
-                direction = parseInt(data, 10);        
+                direction = parseInt(data, 5);        
     
             startScrolling(direction, scrollStep);
         });
@@ -93,12 +93,12 @@ function Projects() {
         <div className="section projects" id="projects">
             <p className="projects__title">projects</p>
             <div className="projects__heading">
-                <div className="projects__heading-circle projects__heading-arrow1" data-scroll-modifier='-1' onClick={() => scrollLeft()}>
+                <button className="projects__heading-circle projects__heading-arrow1" data-scroll-modifier='-1' onClick={() => scrollLeft()}>
                     <div className="projects__heading-arrow">&lt;</div>
-                </div>
-                <div className="projects__heading-circle projects__heading-arrow2" data-scroll-modifier='1' onClick={() => scrollRight()}>
+                </button>
+                <button className="projects__heading-circle projects__heading-arrow2" data-scroll-modifier='1' onClick={() => scrollRight()}>
                     <div className="projects__heading-arrow">&gt;</div>
-                </div>
+                </button>
             </div>
             <div className="projects__container">
                 <div className="projects__line-container">
@@ -118,12 +118,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? Border : ArrowBorder} alt="Border" className="projects__border projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text projects__text-two">capstone: nursimulator.</p>
                         </div>
@@ -142,12 +142,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text projects__text-two">adidas hackathon.</p>
                         </div>
@@ -165,12 +165,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text projects__text-two">instock collaborative.</p>
                         </div>
@@ -189,12 +189,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text projects__text-two">pair programming.</p>
                         </div>
@@ -210,12 +210,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text">brainflix.</p>
                         </div>
@@ -231,12 +231,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text">band site.</p>
                         </div>
@@ -252,12 +252,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text">travel site.</p>
                         </div>
@@ -273,12 +273,12 @@ function Projects() {
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
                             <div className="project__card-circle-container">
-                                <div className="project__card-circle projects__card-arrow1">
+                                <button className="project__card-circle projects__card-arrow1">
                                     <div className="project__card-arrow">&lt;</div>
-                                </div>
-                                <div className="project__card-circle projects__card-arrow2">
+                                </button>
+                                <button className="project__card-circle projects__card-arrow2">
                                     <div className="project__card-arrow">&gt;</div>
-                                </div>
+                                </button>
                             </div>
                             <p className="projects__text">coffee shop.</p>
                         </div>

@@ -24,18 +24,20 @@
             height: 4vw;
             background-color: rgba(255, 255, 255, 0.7);
             font-size: 4vw;
+            border: none;
 
             &:hover {
                 cursor: pointer;
                 color: rgba(0, 0, 0, 0.6);
             }
+            &:focus {
+                outline: none;
+            }
         }
         &-arrow {
             line-height: 4.5vw;
+            font-family: 'Arnie';
 
-            // &:focus {
-            //     color: red;
-            // }
             &:active {
                 color: red;
                 offset: 10px 10px;
