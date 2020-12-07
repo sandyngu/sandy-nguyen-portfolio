@@ -17,7 +17,7 @@ function AboutMe() {
                 <div className="aboutme__bio">
                     <p className="aboutme__greeting aboutme__text">Hello!</p>
                     <p className="aboutme__text">
-                        My name is Sandy and I am a full-stack web developer && registered nurse. 
+                        My name is Sandy and I am a full-stack web developer & registered nurse. 
                         I am excited to make a career transition to web development; I love seeing
                         complex ideas come to fruition through problem-solving and implementation of 
                         various technical languages. I am committed to lifelong learning and am so 

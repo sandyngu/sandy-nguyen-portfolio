@@ -37,18 +37,19 @@ a {
                 &:hover {
                     animation: linkHover 0.9s linear;
                     letter-spacing: 0.2vw;
-                    padding: 0;
+                    padding-bottom: 0; 
                     margin: 0;
                 }
-
                 &--left {
                     transform: none;
+                    padding: 0;
 
                     &1, &2, &3, &4 {
                         @extend .header__nav-list-item--left;
+                        padding-bottom: 0; 
+                        margin: 0;
                     }
                 }
-
                 &--hover {
                     padding: 0 1vw;
                     transition: 0.75s ease-in-out;
@@ -56,17 +57,18 @@ a {
                     &1 {
                         @extend .header__nav-list-item--hover;
                         transform: rotate(-90deg);
-                        margin-top: 2%;
-                    
+                        margin-top: 2%; 
+                        padding-bottom: 0;                  
                     }
                     &2 {
                         transform: rotate(90deg); 
                         margin-top: 4.5%;
                         transition: 0.75s ease;
+                        padding-bottom: 0; 
                     }
                 }
-
                 &-line {
+                    padding: 0;
 
                     &1 {
                         &--move {

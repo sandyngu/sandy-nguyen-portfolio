@@ -22,11 +22,10 @@
             position: absolute;
             margin-top: 7%;
             margin-left: 15%;
-            width: 50%;
+            width: 30%;
             z-index: 1;
             text-align: left;
         }
-        
         &-comments {
             font-size: 3vw;
             color: rgba(0,0,0,0.7);
@@ -41,7 +40,6 @@
         }
     }
     &__form {
-        width: 100%;
 
         &-label {
             color: white;
@@ -50,12 +48,16 @@
         }
         &-input {
             border-radius: 0.2vw;
-            width: 50%;
+            width: 90%;
             font-size: 1.2vw;
             font-family: 'Arnie';
             padding: 0.8vw;
+            opacity: 0.9;
 
             &--name {
+                height: 1vw;
+            }
+            &--position {
                 height: 1vw;
             }
             &--comment {
@@ -64,7 +66,7 @@
             }
         }
         &-button {
-            width: 53.5%;
+            width: 95.5%;
             padding: 0.5vw;
             font-family: 'Arnie';
             font-size: 1.5vw;
@@ -102,18 +104,25 @@
     }
     &__text {
         font-size: 1.3vw;
-        width: 93%;
+        width: 89%;
         text-align: left;
         margin-left: 2%;
-        margin-bottom: 5%;
+        margin-bottom: 6%;
     }
     &__position {
         position: absolute;
         color: white;
         font-size: 2vw;
-        font-family: 'Atalla';
+        font-family: 'Arnie';
         margin-top: 32%;
-        margin-left: 50%;
+        margin-left: 48%;
         z-index: 1;
+        width: 30%;
+        font-weight: bold;
+        font-style: italic;
+    }
+    &__logo {
+        width: 5%;
+        margin-left: 1%;
     }
 }

@@ -51,7 +51,7 @@ function Footer() {
             <nav className="footer__nav">
                 <img src={Logo} alt="Logo" className="footer__nav-list-logo"/>
                 <ul className="footer__nav-list">
-                    <a href='https://www.linkedin.com/in/sandyngu/' className="footer__nav-link">
+                    {/* <a href='https://www.linkedin.com/in/sandyngu/' className="footer__nav-link"> */}
                         <li className="link1 footer__nav-list-item1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
                             <div className="link1 footer__nav-list-item--left1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> linked
                             <img src={LinkedIn} alt="LinkedIn Logo" className="link1 footer__nav-list-item--logo"/>
@@ -59,23 +59,23 @@ function Footer() {
                             <span className="link1 footer__nav-list-item-line2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link1 footer__nav-list-item--right1" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
-                    </a>
-                    <a href='https://github.com/sandyngu' className="footer__nav-link">
+                    {/* </a> */}
+                    {/* <a href='https://github.com/sandyngu' className="footer__nav-link"> */}
                         <li className="link2 footer__nav-list-item2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
                             <div className="link2 footer__nav-list-item--left2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> gith<img src={GitHub} alt="GitHub Logo" className="link2 footer__nav-list-item--logo2"/>b 
                             <span className="link2 footer__nav-list-item-line3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link2 footer__nav-list-item-line4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link2 footer__nav-list-item--right2" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
-                    </a>
-                    <a href='mailto:sandy_nguyen@live.ca' className="footer__nav-link">
+                    {/* </a> */}
+                    {/* <a href='mailto:sandy_nguyen@live.ca' className="footer__nav-link"> */}
                         <li className="link3 footer__nav-list-item3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
                             <div className="link3 footer__nav-list-item--left3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> e-m<span className="footer__nav-list-item--symbol">@</span>il 
                             <span className="link3 footer__nav-list-item-line5" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link3 footer__nav-list-item-line6" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link3 footer__nav-list-item--right3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
-                    </a>
+                    {/* </a> */}
                 </ul>
             </nav>
         </div>
