@@ -97,7 +97,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(-110deg) translate(-5.5vw, 5vw);
+        transform: rotate(-110deg) translate(2.3vw, -6.1vw);
     }
 }
 @keyframes line9 {
@@ -108,12 +108,12 @@
         transform: rotate(250deg) translate(-0.6vw, 1.6vw);
     }
 }
-@keyframes line4 {
+@keyframes line10 {
     0% {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(-200deg) translate(4.78vw, 1.85vw);
+        transform: rotate(-110deg)translate(1.95vw, -5.1vw);
     }
 }
 @keyframes line11 {
@@ -129,6 +129,6 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(-200deg) translate(4.72vw, 1.85vw);
+        transform: rotate(-110deg) translate(1.9vw, -5vw);
     }
 }
