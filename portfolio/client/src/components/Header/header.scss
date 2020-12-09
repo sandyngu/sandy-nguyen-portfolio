@@ -3,6 +3,7 @@
 a {
     text-decoration: none;
 }
+
 .header {
     background-color: rgba(0,0,0,0.05);
     margin: 0;
@@ -23,7 +24,6 @@ a {
                 margin-top: -0.5%;
                 width: 4%;
             }
-            
             &-item {
                 color: black;
                 font-size: 2vw;
@@ -32,6 +32,7 @@ a {
 
                 &1, &2, &3, &4 {
                     @extend .header__nav-list-item;
+                    padding-bottom: 0;
                 }
 
                 &:hover {
@@ -52,7 +53,7 @@ a {
                 }
                 &--hover {
                     padding: 0 1vw;
-                    transition: 0.75s ease-in-out;
+                    transition: 0.2s ease-in-out;
 
                     &1 {
                         @extend .header__nav-list-item--hover;
@@ -63,7 +64,7 @@ a {
                     &2 {
                         transform: rotate(90deg); 
                         margin-top: 4.5%;
-                        transition: 0.75s ease;
+                        transition: 0.2s ease;
                         padding-bottom: 0; 
                     }
                 }
@@ -72,7 +73,7 @@ a {
 
                     &1 {
                         &--move {
-                            animation: 1s line 1;
+                            animation: 0.5s line 1;
                             transform: rotate(160deg) translate(-1.1vw, 0.3vw);
                         }
                     }
@@ -82,14 +83,14 @@ a {
                         display: none;
                         
                         &--move {
-                            animation: 1s line2;
+                            animation: 0.5s line2;
                             display: block;
                             transform: rotate(-200deg) translate(5.9vw, 2.2vw);
                         }
                     }
                     &3 {
                         &--move {
-                            animation: 1s line3;
+                            animation: 0.5s line3;
                             transform: rotate(160deg) translate(-1.1vw, 0.3vw);
                         }
                     }
@@ -99,14 +100,14 @@ a {
                         display: none;
                         
                         &--move {
-                            animation: 1s line4;
+                            animation: 0.5s line4;
                             display: block;
                             transform: rotate(-200deg) translate(4.79vw, 1.85vw);
                         }
                     }
                     &5 {
                         &--move {
-                            animation: 1s line5;
+                            animation: 0.5s line5;
                             transform: rotate(160deg) translate(-1.1vw, 0.3vw);
                         }
                     }
@@ -116,11 +117,28 @@ a {
                         display: none;
 
                         &--move {
-                            animation: 1s line6;
+                            animation: 0.5s line6;
                             display: block;
                             transform: rotate(-200deg) translate(4.73vw, 1.9vw);
                         }
                     } 
+                    &7 {
+                        &--move {
+                            animation: 0.5s line5;
+                            transform: rotate(160deg) translate(-1.1vw, 0.3vw);
+                        }
+                    }
+                    &8 {
+                        position: absolute;
+                        margin-left: 5.95%;
+                        display: none;
+
+                        &--move {
+                            animation: 0.5s line6;
+                            display: block;
+                            transform: rotate(-200deg) translate(4.7vw, 1.9vw);
+                        }
+                    }
                 }
             }
         }

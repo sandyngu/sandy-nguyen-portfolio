@@ -47,7 +47,7 @@ function Footer() {
     }
 
     return (
-        <div className="footer">
+        <div className="footer" id="contact">
             <nav className="footer__nav">
                 <img src={Logo} alt="Logo" className="footer__nav-list-logo"/>
                 <ul className="footer__nav-list">

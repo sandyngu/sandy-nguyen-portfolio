@@ -24,7 +24,7 @@ import Instock3 from '../../assets/images/instock3.png';
 import Adidas from '../../assets/images/adidas.png';
 import Adidas2 from '../../assets/images/adidas2.png';
 import Adidas3 from '../../assets/images/adidas3.png';
-import NurSimulator from '../../assets/images/adidas.png';
+import NurSimulator from '../../assets/images/capstone.png';
 import NurSimulator2 from '../../assets/images/capstone2.png';
 import NurSimulator3 from '../../assets/images/capstone3.png';
 import NurSimulator4 from '../../assets/images/capstone4.png';
@@ -48,20 +48,20 @@ function Projects() {
         document.querySelector('.projects__container').scrollLeft += 620;
     };
 
-    // function changeBorder() {
-    //     e.target.active
-    // }
+    function nextClick() {
+
+    }
 
     (function () {
 
         let scrollHandle = 0,
-            scrollStep = 5,
+            scrollStep = 1,
             parent = $('.projects__container');
     
         //Start the scrolling process
         $('.projects__heading-circle').on('mouseenter', function () {
             let data = $(this).data('scrollModifier'),
-                direction = parseInt(data, 5);        
+                direction = parseInt(data, 1);        
     
             startScrolling(direction, scrollStep);
         });
@@ -107,24 +107,16 @@ function Projects() {
                 </div>
                 <div className="projects__image-container">
                     <ProjectCard>
-                        <img src={NurSimulator} alt="NurSimulator" className="projects__image projects__image1"/>
-                        <img src={NurSimulator2} alt="NurSimulator" className="projects__image projects__image2"/>
-                        <img src={NurSimulator3} alt="NurSimulator" className="projects__image projects__image3"/>
-                        <img src={NurSimulator4} alt="NurSimulator" className="projects__image projects__image4"/>
-                        <img src={NurSimulator5} alt="NurSimulator" className="projects__image projects__image5"/>
-                        <img src={NurSimulator6} alt="NurSimulator" className="projects__image projects__image6"/>
-                        <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
                         <img src={NurSimulator8} alt="NurSimulator" className="projects__image projects__image8"/>
+                        <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
+                        <img src={NurSimulator6} alt="NurSimulator" className="projects__image projects__image6"/>
+                        <img src={NurSimulator5} alt="NurSimulator" className="projects__image projects__image5"/>
+                        <img src={NurSimulator4} alt="NurSimulator" className="projects__image projects__image4"/>
+                        <img src={NurSimulator3} alt="NurSimulator" className="projects__image projects__image3"/>
+                        <img src={NurSimulator2} alt="NurSimulator" className="projects__image projects__image2"/>
+                        <img src={NurSimulator} alt="NurSimulator" className="projects__image projects__image1"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? Border : ArrowBorder} alt="Border" className="projects__border projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text projects__text-two">capstone: nursimulator.</p>
                         </div>
                         <ProjectCardPopup>
@@ -136,19 +128,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
-                        <img src={Adidas} alt="Adidas" className="projects__image projects__image9"/>
-                        <img src={Adidas2} alt="Adidas" className="projects__image projects__image10"/>
                         <img src={Adidas3} alt="Adidas" className="projects__image projects__image11"/>
+                        <img src={Adidas2} alt="Adidas" className="projects__image projects__image10"/>
+                        <img src={Adidas} alt="Adidas" className="projects__image projects__image9"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text projects__text-two">adidas hackathon.</p>
                         </div>
                         <ProjectCardPopup>
@@ -159,19 +143,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
-                        <img src={Instock} alt="Instock" className="projects__image projects__image12"/>
-                        <img src={Instock2} alt="Instock" className="projects__image projects__image13"/>
                         <img src={Instock3} alt="Instock" className="projects__image projects__image14"/>
+                        <img src={Instock2} alt="Instock" className="projects__image projects__image13"/>
+                        <img src={Instock} alt="Instock" className="projects__image projects__image12"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text projects__text-two">instock collaborative.</p>
                         </div>
                         <ProjectCardPopup>
@@ -183,19 +159,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
-                        <img src={Pair} alt="Baby Got Track" className="projects__image projects__image15"/>
-                        <img src={Pair2} alt="Baby Got Track" className="projects__image projects__image16"/>
                         <img src={Pair3} alt="Baby Got Track" className="projects__image projects__image17"/>
+                        <img src={Pair2} alt="Baby Got Track" className="projects__image projects__image16"/>
+                        <img src={Pair} alt="Baby Got Track" className="projects__image projects__image15"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text projects__text-two">pair programming.</p>
                         </div>
                         <ProjectCardPopup>
@@ -204,19 +172,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard> 
                     <ProjectCard>
-                        <img src={Brainflix} alt="Brainflix" className="projects__image projects__image18"/>
-                        <img src={Brainflix2} alt="Brainflix" className="projects__image projects__image19"/>
                         <img src={Brainflix3} alt="Brainflix" className="projects__image projects__image20"/>
+                        <img src={Brainflix2} alt="Brainflix" className="projects__image projects__image19"/>
+                        <img src={Brainflix} alt="Brainflix" className="projects__image projects__image18"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text">brainflix.</p>
                         </div>
                         <ProjectCardPopup>
@@ -225,19 +185,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
-                        <img src={BandSite} alt="Band Site" className="projects__image projects__image21"/>
-                        <img src={BandSite2} alt="Band Site" className="projects__image projects__image22"/>
                         <img src={BandSite3} alt="Band Site" className="projects__image projects__image23"/>
+                        <img src={BandSite2} alt="Band Site" className="projects__image projects__image22"/>
+                        <img src={BandSite} alt="Band Site" className="projects__image projects__image21"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text">band site.</p>
                         </div>
                         <ProjectCardPopup>
@@ -246,19 +198,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard>
-                        <img src={TravelSite} alt="Travel Site" className="projects__image projects__image24"/>
-                        <img src={TravelSite2} alt="Travel Site" className="projects__image projects__image25"/>
                         <img src={TravelSite3} alt="Travel Site" className="projects__image projects__image26"/>
+                        <img src={TravelSite2} alt="Travel Site" className="projects__image projects__image25"/>
+                        <img src={TravelSite} alt="Travel Site" className="projects__image projects__image24"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text">travel site.</p>
                         </div>
                         <ProjectCardPopup>
@@ -267,19 +211,11 @@ function Projects() {
                         </ProjectCardPopup>
                     </ProjectCard>
                     <ProjectCard /*onClick={()=>changeBorder()}*/>
-                        <img src={CoffeeShop} alt="Coffee Shop" className="projects__image projects__image27"/>
-                        <img src={CoffeeShop2} alt="Coffee Shop" className="projects__image projects__image28"/>
                         <img src={CoffeeShop3} alt="Coffee Shop" className="projects__image projects__image29"/>
+                        <img src={CoffeeShop2} alt="Coffee Shop" className="projects__image projects__image28"/>
+                        <img src={CoffeeShop} alt="Coffee Shop" className="projects__image projects__image27"/>
                         <img onClick={() => setBorder(prevMode => !prevMode)} src={border ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <div className="project__card-circle-container">
-                                <button className="project__card-circle projects__card-arrow1">
-                                    <div className="project__card-arrow">&lt;</div>
-                                </button>
-                                <button className="project__card-circle projects__card-arrow2">
-                                    <div className="project__card-arrow">&gt;</div>
-                                </button>
-                            </div>
                             <p className="projects__text">coffee shop.</p>
                         </div>
                         <ProjectCardPopup>
