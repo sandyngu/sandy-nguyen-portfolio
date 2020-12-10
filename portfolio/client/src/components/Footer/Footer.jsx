@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import {Link} from 'react-router-dom';
 import Logo from '../../assets/images/logo.png';
 import LinkedIn from '../../assets/images/linkedin.png';
 import GitHub from '../../assets/images/github.png';
@@ -19,11 +20,16 @@ function Footer() {
             document.querySelector('.footer__nav-list-item--right2').classList.add('footer__nav-list-item--hover2');
             document.querySelector('.footer__nav-list-item-line3').classList.add('footer__nav-list-item-line3--move');
             document.querySelector('.footer__nav-list-item-line4').classList.add('footer__nav-list-item-line4--move');
-        } else {
+        } else if (e.target.className.includes('link3')) {
             document.querySelector('.footer__nav-list-item--left3').classList.add('footer__nav-list-item--hover1');
             document.querySelector('.footer__nav-list-item--right3').classList.add('footer__nav-list-item--hover2');
             document.querySelector('.footer__nav-list-item-line5').classList.add('footer__nav-list-item-line5--move');
             document.querySelector('.footer__nav-list-item-line6').classList.add('footer__nav-list-item-line6--move');
+        } else {
+            document.querySelector('.footer__nav-list-item--left4').classList.add('footer__nav-list-item--hover1');
+            document.querySelector('.footer__nav-list-item--right4').classList.add('footer__nav-list-item--hover2');
+            document.querySelector('.footer__nav-list-item-line7').classList.add('footer__nav-list-item-line7--move');
+            document.querySelector('.footer__nav-list-item-line8').classList.add('footer__nav-list-item-line8--move');
         }
     }
 
@@ -38,11 +44,16 @@ function Footer() {
             document.querySelector('.footer__nav-list-item--right2').classList.remove('footer__nav-list-item--hover2');
             document.querySelector('.footer__nav-list-item-line3').classList.remove('footer__nav-list-item-line3--move');
             document.querySelector('.footer__nav-list-item-line4').classList.remove('footer__nav-list-item-line4--move');
-        } else {
+        } else if (e.target.className.includes('link3')) {
             document.querySelector('.footer__nav-list-item--left3').classList.remove('footer__nav-list-item--hover1');
             document.querySelector('.footer__nav-list-item--right3').classList.remove('footer__nav-list-item--hover2');
             document.querySelector('.footer__nav-list-item-line5').classList.remove('footer__nav-list-item-line5--move');
             document.querySelector('.footer__nav-list-item-line6').classList.remove('footer__nav-list-item-line6--move');
+        } else {
+            document.querySelector('.footer__nav-list-item--left4').classList.remove('footer__nav-list-item--hover1');
+            document.querySelector('.footer__nav-list-item--right4').classList.remove('footer__nav-list-item--hover2');
+            document.querySelector('.footer__nav-list-item-line7').classList.remove('footer__nav-list-item-line7--move');
+            document.querySelector('.footer__nav-list-item-line8').classList.remove('footer__nav-list-item-line8--move');
         }
     }
 
@@ -74,6 +85,14 @@ function Footer() {
                             <span className="link3 footer__nav-list-item-line5" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link3 footer__nav-list-item-line6" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link3 footer__nav-list-item--right3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
+                        </li>
+                    </a>
+                    <a href="SandyNguyen-Resume.pdf" target="_blank" className="footer__nav-link">
+                        <li className="link4 footer__nav-list-item4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
+                            <div className="link4 footer__nav-list-item--left4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> resume 
+                            <span className="link4 footer__nav-list-item-line7" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
+                            <span className="link4 footer__nav-list-item-line8" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
+                            <div className="link4 footer__nav-list-item--right4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
                     </a>
                 </ul>

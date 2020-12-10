@@ -26,12 +26,13 @@
         height: 20vw;
         margin: 5%;
     }
-    &__photo {
+    &__border {
         width: 13%;
         position: absolute;
+        z-index: 1;
 
         &1 {
-            top: 72%;
+            top: 71%;
             left: 20%;
             transform: rotate(25deg);
         }
@@ -44,6 +45,32 @@
             top: 40%;
             left: 20%;
             transform: rotate(15deg);
+        }
+    }
+    &__photo {
+        position: absolute;
+        width: 12%;
+
+        &1 {
+            top: 73%;
+            left: 21%;
+            transform: rotate(25deg);
+        }
+        &2 {
+            top: 57%;
+            left: 10.2%;
+            transform: rotate(-15deg);
+        }
+        &3 {
+            top: 42%;
+            left: 20.5%;
+            transform: rotate(15deg);
+        }
+
+        &-container {
+            &1 {
+                animation: polaroidPrint1 1s;
+            }
         }
     }
     &__bio {

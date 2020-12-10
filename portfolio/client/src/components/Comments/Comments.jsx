@@ -22,7 +22,7 @@ class Comments extends React.Component {
             .catch(err => console.log(err))
     };
 
-    typeWriter = (e) => {
+    typeWriter(e) {
         e.preventDefault();
         let i = 0;
         let txt = document.querySelector('.comments__heading').innerText;

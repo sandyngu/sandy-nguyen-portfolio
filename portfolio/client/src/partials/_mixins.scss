@@ -84,22 +84,6 @@
         transform: rotate(-200deg) translate(4.72vw, 1.85vw);
     }
 }
-@keyframes line7a {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(250deg) translate(-0.6vw, 1.6vw);
-    }
-}
-@keyframes line8a {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-110deg) translate(2.3vw, -6.1vw);
-    }
-}
 @keyframes line7 {
     0% {
         transform: rotate(0deg);
@@ -129,7 +113,7 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(-110deg)translate(1.95vw, -5.1vw);
+        transform: rotate(-110deg) translate(2.4vw, -6.1vw);
     }
 }
 @keyframes line11 {
@@ -145,6 +129,33 @@
         transform: rotate(0deg);
     }
     100% {
+        transform: rotate(-110deg) translate(1.95vw, -5.1vw);
+    }
+}
+@keyframes line13 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(250deg) translate(-0.6vw, 1.6vw);
+    }
+}
+@keyframes line14 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
         transform: rotate(-110deg) translate(1.9vw, -5vw);
+    }
+}
+
+@keyframes polaroidPrint1 {
+    0% {
+        transform: rotate3d()
+    }
+    100% {
+        top: 73%;
+        left: 21%;
+        transform: rotate(25deg);
     }
 }

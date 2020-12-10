@@ -44,7 +44,7 @@ a {
                     margin-top: 4%;
                 }
 
-                &1, &2, &3 {
+                &1, &2, &3, &4 {
                     @extend .footer__nav-list-item;
                 }
 
@@ -59,7 +59,7 @@ a {
                     transform: none;
                     padding: 0;
 
-                    &1, &2, &3 {
+                    &1, &2, &3, &4 {
                         @extend .footer__nav-list-item--left;
                         padding-bottom: 0; 
                         margin: 0;
@@ -87,7 +87,7 @@ a {
 
                     &1 {
                         &--move {
-                            animation: 0.5s line7 1;
+                            animation: 0.5s line9 1;
                             transform: rotate(250deg) translate(-0.6vw, 1.5vw);
                         }
                     }
@@ -97,14 +97,14 @@ a {
                         display: none;
                         
                         &--move {
-                            animation: 0.5s line8;
+                            animation: 0.5s line10;
                             display: block;
                             transform: rotate(-110deg) translate(2.3vw, -6.1vw);
                         }
                     }
                     &3 {
                         &--move {
-                            animation: 0.5s line9;
+                            animation: 0.5s line11;
                             transform: rotate(250deg) translate(-0.6vw, 1.5vw);
                         }
                     }
@@ -114,14 +114,14 @@ a {
                         display: none;
                         
                         &--move {
-                            animation: 0.5s line10;
+                            animation: 0.5s line12;
                             display: block;
                             transform: rotate(-110deg) translate(1.95vw, -5.1vw);
                         }
                     }
                     &5 {
                         &--move {
-                            animation: 0.5s line11;
+                            animation: 0.5s line13;
                             transform: rotate(250deg) translate(-0.6vw, 1.5vw);
                         }
                     }
@@ -131,7 +131,24 @@ a {
                         display: none;
 
                         &--move {
-                            animation: 0.5s line12;
+                            animation: 0.5s line14;
+                            display: block;
+                            transform: rotate(-110deg) translate(1.9vw, -5vw);
+                        }
+                    } 
+                    &7 {
+                        &--move {
+                            animation: 0.5s line13;
+                            transform: rotate(250deg) translate(-0.6vw, 1.5vw);
+                        }
+                    }
+                    &8 {
+                        position: absolute;
+                        margin-left: 5.95%;
+                        display: none;
+
+                        &--move {
+                            animation: 0.5s line14;
                             display: block;
                             transform: rotate(-110deg) translate(1.9vw, -5vw);
                         }

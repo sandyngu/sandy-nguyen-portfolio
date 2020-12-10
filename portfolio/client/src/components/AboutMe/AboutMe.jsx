@@ -1,6 +1,9 @@
 import React from 'react';
 import Camera from '../../assets/images/polaroidcamera2.png';
 import Polaroid from '../../assets/images/polaroid.png';
+import Photo1 from '../../assets/images/1.jpg';
+import Photo2 from '../../assets/images/2.jpg';
+import Photo3 from '../../assets/images/3.jpg';
 import './about-me.scss';
 
 function AboutMe() {
@@ -10,9 +13,18 @@ function AboutMe() {
             <div className="aboutme__content">
                 <div className="aboutme__photos">
                     <img src={Camera} alt="Polaroid Camera" className="aboutme__camera"/>
-                    <img src={Polaroid} alt="Polaroid" className="aboutme__photo aboutme__photo1"/>
-                    <img src={Polaroid} alt="Polaroid" className="aboutme__photo aboutme__photo2"/>
-                    <img src={Polaroid} alt="Polaroid" className="aboutme__photo aboutme__photo3"/>
+                    <div className="aboutme__photo-container aboutme__photo-container1">
+                        <img src={Polaroid} alt="Polaroid" className="aboutme__border aboutme__border1"/>
+                        <img src={Photo1} alt="Polaroid" className="aboutme__photo aboutme__photo1"/>
+                    </div>
+                    <div className="aboutme__photo-container aboutme__photo-container2">
+                        <img src={Polaroid} alt="Polaroid" className="aboutme__border aboutme__border2"/>
+                        <img src={Photo2} alt="Polaroid" className="aboutme__photo aboutme__photo2"/>
+                    </div>
+                    <div className="aboutme__photo-container aboutme__photo-container3">
+                        <img src={Polaroid} alt="Polaroid" className="aboutme__border aboutme__border3"/>
+                        <img src={Photo3} alt="Polaroid" className="aboutme__photo aboutme__photo3"/>
+                    </div>
                 </div>
                 <div className="aboutme__bio">
                     <p className="aboutme__greeting aboutme__text">Hello!</p>
