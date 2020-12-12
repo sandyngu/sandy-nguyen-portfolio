@@ -40,7 +40,8 @@ function AboutMe() {
                         <br/><br/><q className="aboutme__text aboutme__text-quote">Dream it. Believe it. Build it.</q>
 
                         <br/><br/>Below is a showcase of the various projects I was able to complete. 
-                        Don't hesitate to get in touch with me through LinkedIn, GitHub or e-mail!
+                        Don't hesitate to get in touch with me through <a href="https://www.linkedin.com/in/sandyngu/" className="aboutme__link">LinkedIn</a>, 
+                        <a href="https://github.com/sandyngu" className="aboutme__link"> GitHub</a> or <a href="mailto:sandy_nguyen@live.ca" className="aboutme__link">e-mail</a>!
                     </p>
                 </div>
             </div>

@@ -34,7 +34,7 @@
         &1 {
             top: 71%;
             left: 20%;
-            transform: rotate(25deg);
+            transform: rotate(25deg);  
         }
         &2 {
             top: 55%;
@@ -45,6 +45,7 @@
             top: 40%;
             left: 20%;
             transform: rotate(15deg);
+            z-index: 2;
         }
     }
     &__photo {
@@ -65,11 +66,18 @@
             top: 42%;
             left: 20.5%;
             transform: rotate(15deg);
+            z-index: 1;
         }
 
         &-container {
             &1 {
-                animation: polaroidPrint1 1s;
+                animation: polaroidPrint1 3s linear;
+            }
+            &2 {
+                animation: polaroidPrint1 3s linear;
+            }
+            &3 {
+                animation: polaroidPrint1 3s linear;
             }
         }
     }
@@ -107,5 +115,9 @@
     }
     &__greeting {
         margin: 4% 0;
+    }
+    &__link {
+        color: white;
+        font-weight: bold;
     }
 }

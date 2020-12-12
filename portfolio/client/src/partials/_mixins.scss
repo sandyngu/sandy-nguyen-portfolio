@@ -151,11 +151,12 @@
 
 @keyframes polaroidPrint1 {
     0% {
-        transform: rotate3d()
+        opacity: 0%;
+        transform: rotate3d(5, 5, 5);
     }
     100% {
         top: 73%;
         left: 21%;
-        transform: rotate(25deg);
+        opacity: 100%;
     }
 }

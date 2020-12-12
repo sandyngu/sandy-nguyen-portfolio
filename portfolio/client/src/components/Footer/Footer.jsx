@@ -81,7 +81,7 @@ function Footer() {
                     </a>
                     <a href='mailto:sandy_nguyen@live.ca' className="footer__nav-link">
                         <li className="link3 footer__nav-list-item3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
-                            <div className="link3 footer__nav-list-item--left3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> e-m<span className="footer__nav-list-item--symbol">@</span>il 
+                            <div className="link3 footer__nav-list-item--left3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> e-m<span className="link3 footer__nav-list-item--symbol">@</span>il 
                             <span className="link3 footer__nav-list-item-line5" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <span className="link3 footer__nav-list-item-line6" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>
                             <div className="link3 footer__nav-list-item--right3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
