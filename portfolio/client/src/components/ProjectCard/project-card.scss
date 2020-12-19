@@ -8,6 +8,11 @@
         height: 16.5vw;
         width: 18vw;
         z-index: 2;
+
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
     }
     &-circle {
         position: relative;

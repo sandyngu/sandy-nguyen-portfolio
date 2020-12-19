@@ -1,7 +1,7 @@
 import React from 'react';
-import './project-card-popup.scss';
+import './project-card-description.scss';
 
-function ProjectCardPopup(props) {
+function ProjectCardDescription(props) {
     return (
         <div className="project__card-popup">
             {props.children}
@@ -9,4 +9,4 @@ function ProjectCardPopup(props) {
     )
 }
 
-export default ProjectCardPopup;
+export default ProjectCardDescription;

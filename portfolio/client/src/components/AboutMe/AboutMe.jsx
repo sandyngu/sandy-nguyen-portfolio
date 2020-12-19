@@ -7,9 +7,11 @@ import Photo3 from '../../assets/images/3.jpg';
 import './about-me.scss';
 
 function AboutMe() {
+
     return (
         <div className="section aboutme" id="aboutme">
             <p className="aboutme__title">about me</p>
+            {/* <div id="typewriter"></div> */}
             <div className="aboutme__content">
                 <div className="aboutme__photos">
                     <img src={Camera} alt="Polaroid Camera" className="aboutme__camera"/>

@@ -74,10 +74,14 @@
     }
     &__image {
         position: absolute;
-        width: 16.5vw;
-        height: 11.2vw;
-        margin-left: -17.2%;
-        top: 5.5%;
+        width: 15.8vw;
+        height: 11.1vw;
+        margin-left: -17.1%;
+        top: 5.7%;
+
+        &:hover {
+            opacity: 0.5;
+        }
 
         &3 {
             display: none;
@@ -115,20 +119,24 @@
 
         &-two {
             line-height: 1.5vw;  
-        }
-    }
-    &__border {
-        width: 22vw;
-            height: 21vw;
-            margin-left: -20%;
-            margin-top: -1.75%;
-            position: absolute;
-            z-index: 2;
-            filter: brightness(0) opacity(0.8);
 
             &:hover {
                 cursor: pointer;
             }
+        }
+    }
+    &__border {
+        width: 22vw;
+        height: 21vw;
+        margin-left: -20%;
+        margin-top: -1.75%;
+        position: absolute;
+        z-index: 1;
+        filter: brightness(0) opacity(0.8);
+
+        &:hover {
+            cursor: pointer;
+        }
 
         &-stars {
             width: 22vw;

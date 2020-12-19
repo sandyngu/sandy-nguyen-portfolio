@@ -1,8 +1,13 @@
 import React from 'react';
+import $ from 'jquery';
 import Polaroid from '../../assets/images/polaroid.png';
 import './project-card.scss';
 
 function ProjectCard(props) {
+
+    let project = $('.project__card');
+    $('.project__card-circle').click()
+
     return (
         <div className="project__card">
             <img src={Polaroid} alt="Polaroid" className="project__card-background"/>
