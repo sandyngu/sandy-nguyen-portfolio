@@ -34,7 +34,7 @@ class Comments extends React.Component {
         }
     }
     render() {
-        console.log(this.state.comments)
+        
         return (
             
             <div className="section comments" id="comments">

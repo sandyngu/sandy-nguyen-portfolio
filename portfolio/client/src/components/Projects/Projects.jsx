@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import $ from 'jquery';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import ProjectCardDescription from '../ProjectCardDescription/ProjectCardDescription';
+import ProjectCardModal from '../ProjectCardModal/ProjectCardModal';
 import Line from '../../assets/images/clothesline.png';
 import CoffeeShop from '../../assets/images/coffeeshop.png';
 import CoffeeShop2 from '../../assets/images/coffeeshop2.png';
@@ -36,7 +37,7 @@ import Border from '../../assets/images/border.png';
 import ArrowBorder from '../../assets/images/arrow-border.png';
 import './projects.scss';
 
-function Projects() {
+function Projects(props) {
 
     const [border1, setBorder1] = useState(0);
     const [border2, setBorder2] = useState(0);
@@ -54,10 +55,6 @@ function Projects() {
     function scrollRight() {
         document.querySelector('.projects__container').scrollLeft += 620;
     };
-
-    function nextClick() {
-
-    }
 
     (function () {
 
@@ -96,6 +93,10 @@ function Projects() {
     
     }());
 
+    function highlight() {
+        $(this).style.opacity="0.5";
+    }
+
     return (
         <div className="section projects" id="projects">
             <p className="projects__title">projects</p>
@@ -113,7 +114,13 @@ function Projects() {
                     <img src={Line} alt="Clothes Line" className="projects__line"/>
                 </div>
                 <div className="projects__image-container">
-                    <ProjectCard>
+                    <ProjectCard onClick={() => props.toggleCapstone()}>
+                        {props.state.capstone ? <ProjectCardModal>
+                            <button className="projects__heading-close" data-scroll-modifier='-1' onClick={() => scrollLeft()}>
+                                <div className="projects__heading-x">x</div>
+                                blablalbal
+                            </button>
+                        </ProjectCardModal> : null}
                         <img src={NurSimulator8} alt="NurSimulator" className="projects__image projects__image8"/>
                         <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
                         <img src={NurSimulator6} alt="NurSimulator" className="projects__image projects__image6"/>
@@ -140,7 +147,7 @@ function Projects() {
                         <img src={Adidas} alt="Adidas" className="projects__image projects__image9"/>
                         <img onClick={() => setBorder2(prevMode => !prevMode)} src={border2 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text projects__text-two">adidas hackathon.</p>
+                            <p className="projects__text projects__text-two" onHover={() => highlight()}>adidas hackathon.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">adidas Hackathon: #FromTrashToTrainers</p>

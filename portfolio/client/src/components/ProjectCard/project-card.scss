@@ -7,7 +7,7 @@
         position: relative;
         height: 16.5vw;
         width: 18vw;
-        z-index: 2;
+        z-index: 3;
 
         &:hover {
             opacity: 0.8;
@@ -24,7 +24,7 @@
         border: 0.1vw grey solid;
         margin-right: 3%;
         margin-top: -100%;
-        z-index: 2;
+        z-index: 3;
         
 
         &:hover {
@@ -57,7 +57,7 @@
         justify-content: space-between;
         position: absolute;
         margin-top: -4%;
-        z-index: 2;
+        z-index: 3;
         margin-left: 8%;
     }
 }
