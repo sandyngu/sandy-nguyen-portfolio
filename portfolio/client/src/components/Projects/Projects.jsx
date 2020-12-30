@@ -115,12 +115,6 @@ function Projects(props) {
                 </div>
                 <div className="projects__image-container">
                     <ProjectCard onClick={() => props.toggleCapstone()}>
-                        {props.state.capstone ? <ProjectCardModal>
-                            <button className="projects__heading-close" data-scroll-modifier='-1' onClick={() => scrollLeft()}>
-                                <div className="projects__heading-x">x</div>
-                                blablalbal
-                            </button>
-                        </ProjectCardModal> : null}
                         <img src={NurSimulator8} alt="NurSimulator" className="projects__image projects__image8"/>
                         <img src={NurSimulator7} alt="NurSimulator" className="projects__image projects__image7"/>
                         <img src={NurSimulator6} alt="NurSimulator" className="projects__image projects__image6"/>
@@ -239,6 +233,11 @@ function Projects(props) {
                     </ProjectCard>               
                 </div>
             </div>
+            {props.state.capstone ? <ProjectCardModal>
+                    <button className="projects__heading-close">
+                        <div className="projects__heading-x">x</div>
+                    </button>
+                </ProjectCardModal> : null}
         </div>
     )
 }

@@ -10,7 +10,7 @@ import Footer from '../Footer/Footer';
 class Main extends React.Component {
 
     state = {
-        capstone: false,
+        capstone: true,
         adidas: false,
         instock: false,
         pair: false,
@@ -30,6 +30,7 @@ class Main extends React.Component {
                 capstone: false
             })
         }
+        console.log(this.state.capstone)
     }
     toggleAdidas() {
         if (!this.state.adidas) {
@@ -110,6 +111,7 @@ class Main extends React.Component {
     }
 
     render() {
+        console.log(this.state.capstone)
         return (
             <div className="main">
                 <Header />
@@ -123,4 +125,4 @@ class Main extends React.Component {
     }
 }
 
-export default Main;Pair
+export default Main;

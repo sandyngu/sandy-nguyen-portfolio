@@ -63,11 +63,14 @@
         }
     }
     &__line {
+        position: relative;
+        z-index: 1;
         height: 15vw;
         width: 50%;
-        z-index: 2;
 
         &-container {
+            position: relative;
+            z-index: 1;
             display: flex;
             width: 204%;
         }
