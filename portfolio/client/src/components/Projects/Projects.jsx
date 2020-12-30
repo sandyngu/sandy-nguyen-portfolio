@@ -141,7 +141,7 @@ function Projects(props) {
                         <img src={Adidas} alt="Adidas" className="projects__image projects__image9"/>
                         <img onClick={() => setBorder2(prevMode => !prevMode)} src={border2 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text projects__text-two" onHover={() => highlight()}>adidas hackathon.</p>
+                            <p className="projects__text projects__text-two" onClick={() => props.toggleAdidas()}>adidas hackathon.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">adidas Hackathon: #FromTrashToTrainers</p>
@@ -156,7 +156,7 @@ function Projects(props) {
                         <img src={Instock} alt="Instock" className="projects__image projects__image12"/>
                         <img onClick={() => setBorder3(prevMode => !prevMode)} src={border3 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text projects__text-two">instock collaborative.</p>
+                            <p className="projects__text projects__text-two" onClick={() => props.toggleInstock()}>instock collaborative.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">InStock Collaborative</p>
@@ -172,7 +172,7 @@ function Projects(props) {
                         <img src={Pair} alt="Baby Got Track" className="projects__image projects__image15"/>
                         <img onClick={() => setBorder4(prevMode => !prevMode)} src={border4 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text projects__text-two">pair programming.</p>
+                            <p className="projects__text projects__text-two" onClick={() => props.togglePair()}>pair programming.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Baby Got Track</p>
@@ -185,7 +185,7 @@ function Projects(props) {
                         <img src={Brainflix} alt="Brainflix" className="projects__image projects__image18"/>
                         <img onClick={() => setBorder5(prevMode => !prevMode)} src={border5 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text">brainflix.</p>
+                            <p className="projects__text" onClick={() => props.toggleBrainflix()}>brainflix.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Brainflix</p>
@@ -198,7 +198,7 @@ function Projects(props) {
                         <img src={BandSite} alt="Band Site" className="projects__image projects__image21"/>
                         <img onClick={() => setBorder6(prevMode => !prevMode)} src={border6 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text">band site.</p>
+                            <p className="projects__text" onClick={() => props.toggleBandSite()}>band site.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">BandSite</p>
@@ -211,7 +211,7 @@ function Projects(props) {
                         <img src={TravelSite} alt="Travel Site" className="projects__image projects__image24"/>
                         <img onClick={() => setBorder7(prevMode => !prevMode)} src={border7 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text">travel site.</p>
+                            <p className="projects__text" onClick={() => props.toggleTravelSite()}>travel site.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">TravelSite</p>
@@ -224,7 +224,7 @@ function Projects(props) {
                         <img src={CoffeeShop} alt="Coffee Shop" className="projects__image projects__image27"/>
                         <img onClick={() => setBorder8(prevMode => !prevMode)} src={border8 ? ArrowBorder : Border} alt="Border" className="projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text">coffee shop.</p>
+                            <p className="projects__text" onClick={() => props.toggleCoffeeShop()}>coffee shop.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Coffee Shop</p>
@@ -239,6 +239,55 @@ function Projects(props) {
                         <div className="project__card-modal-x">x</div>
                     </button>
                     <iframe src="https://nursimulator.herokuapp.com/" title="NurSimulator" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.adidas ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="Adidas Hackathon" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.instock ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="InStock" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.pair ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="Pair Programming" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.brainflix ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="Brainflix" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.bandsite ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="BandSite" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.travelsite ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="TravelSite" className="project__card-modal-demo" scrolling="no"/>
+                </ProjectCardModal> : null}
+            {props.state.coffeeshop ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
+                    </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="CoffeeShop" className="project__card-modal-demo" scrolling="no"/>
                 </ProjectCardModal> : null}
         </div>
     )

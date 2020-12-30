@@ -123,10 +123,9 @@
 
         &-two {
             line-height: 1.5vw;  
-
-            &:hover {
-                cursor: pointer;
-            }
+        }
+        &:hover {
+            cursor: pointer;
         }
     }
     &__border {

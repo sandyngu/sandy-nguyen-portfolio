@@ -30,9 +30,8 @@ class Main extends React.Component {
                 capstone: false
             })
         }
-        console.log(this.state.capstone)
     }
-    toggleAdidas() {
+    toggleAdidas = () => {
         if (!this.state.adidas) {
             this.setState({
                 adidas: true
@@ -43,7 +42,7 @@ class Main extends React.Component {
             })
         }
     }
-    toggleInstock() {
+    toggleInstock = () => {
         if (!this.state.instock) {
             this.setState({
                 instock: true
@@ -54,7 +53,7 @@ class Main extends React.Component {
             })
         }
     }
-    togglePair() {
+    togglePair = () => {
         if (!this.state.pair) {
             this.setState({
                 pair: true
@@ -65,7 +64,7 @@ class Main extends React.Component {
             })
         }
     }
-    toggleBrainflix() {
+    toggleBrainflix = () => {
         if (!this.state.brainflix) {
             this.setState({
                 brainflix: true
@@ -76,7 +75,7 @@ class Main extends React.Component {
             })
         }
     }
-    toggleBandSite() {
+    toggleBandSite = () => {
         if (!this.state.bandsite) {
             this.setState({
                 bandsite: true
@@ -87,7 +86,7 @@ class Main extends React.Component {
             })
         }
     }
-    toggleTravelSite() {
+    toggleTravelSite = () => {
         if (!this.state.travelsite) {
             this.setState({
                 travelsite: true
@@ -98,7 +97,7 @@ class Main extends React.Component {
             })
         }
     }
-    toggleCoffeeShop() {
+    toggleCoffeeShop = () => {
         if (!this.state.coffeeshop) {
             this.setState({
                 coffeeshop: true
