@@ -10,7 +10,7 @@ import Footer from '../Footer/Footer';
 class Main extends React.Component {
 
     state = {
-        capstone: true,
+        capstone: false,
         adidas: false,
         instock: false,
         pair: false,
@@ -20,7 +20,7 @@ class Main extends React.Component {
         coffeeshop: false
     }
 
-    toggleCapstone() {
+    toggleCapstone = () => {
         if (!this.state.capstone) {
             this.setState({
                 capstone: true
@@ -109,6 +109,18 @@ class Main extends React.Component {
             })
         }
     }
+    closeModal = () => {
+        this.setState({
+            capstone: false,
+            adidas: false,
+            instock: false,
+            pair: false,
+            brainflix: false,
+            bandsite: false,
+            travelsite: false,
+            coffeeshop: false 
+        })
+    }
 
     render() {
         console.log(this.state.capstone)
@@ -117,7 +129,7 @@ class Main extends React.Component {
                 <Header />
                 <Hero />
                 <AboutMe />
-                <Projects state={this.state} toggleCapstone={this.toggleCapstone} toggleAdidas={this.toggleAdidas} toggleInstock={this.toggleInstock} togglePair={this.togglePair} toggleBrainflix={this.toggleBrainflix} toggleBandSite={this.toggleBandSite} toggleTravelSite={this.toggleTravelSite} toggleCoffeeShop={this.toggleCoffeeShop}/>
+                <Projects state={this.state} toggleCapstone={this.toggleCapstone} toggleAdidas={this.toggleAdidas} toggleInstock={this.toggleInstock} togglePair={this.togglePair} toggleBrainflix={this.toggleBrainflix} toggleBandSite={this.toggleBandSite} toggleTravelSite={this.toggleTravelSite} toggleCoffeeShop={this.toggleCoffeeShop} closeModal={this.closeModal}/>
                 <Comments />
                 <Footer />
             </div>

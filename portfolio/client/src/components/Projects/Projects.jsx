@@ -125,7 +125,7 @@ function Projects(props) {
                         <img src={NurSimulator} alt="NurSimulator" className="projects__image projects__image1"/>
                         <img onClick={() => setBorder1(prevMode => !prevMode)} src={border1 ? ArrowBorder : Border} alt="Border" className="projects__border projects__border"/>
                         <div className="project__card-container">
-                            <p className="projects__text projects__text-two">capstone: nursimulator.</p>
+                            <p className="projects__text projects__text-two" onClick={() => props.toggleCapstone()}>capstone: nursimulator.</p>
                         </div>
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Capstone Project: NurSimulator</p>
@@ -233,10 +233,12 @@ function Projects(props) {
                     </ProjectCard>               
                 </div>
             </div>
-            {props.state.capstone ? <ProjectCardModal>
-                    <button className="projects__heading-close">
-                        <div className="projects__heading-x">x</div>
+            {props.state.capstone ? 
+                <ProjectCardModal>
+                    <button className="project__card-modal-close" onClick={() => props.closeModal()}>
+                        <div className="project__card-modal-x">x</div>
                     </button>
+                    <iframe src="https://nursimulator.herokuapp.com/" title="NurSimulator" className="project__card-modal-demo" scrolling="no"/>
                 </ProjectCardModal> : null}
         </div>
     )
