@@ -1,6 +1,6 @@
 import React from 'react';
-import $ from 'jquery';
-import {Link} from 'react-router-dom';
+// import $ from 'jquery';
+// import {Link} from 'react-router-dom';
 import Logo from '../../assets/images/logo.png';
 import LinkedIn from '../../assets/images/linkedin.png';
 import GitHub from '../../assets/images/github.png';
@@ -88,7 +88,7 @@ function Footer() {
                             <div className="link3 footer__nav-list-item--right3" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&gt;</div>
                         </li>
                     </a>
-                    <a href={Resume} target="_blank" className="footer__nav-link">
+                    <a href={Resume} target="_blank" rel="noreferrer" className="footer__nav-link">
                         <li className="link4 footer__nav-list-item4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>
                             <div className="link4 footer__nav-list-item--left4" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>&lt; </div> resume 
                             <span className="link4 footer__nav-list-item-line7" onMouseOver={(e) => mouseHover(e)} onMouseOut={(e) => mouseLeave(e)}>/</span>

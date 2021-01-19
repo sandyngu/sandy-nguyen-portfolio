@@ -93,9 +93,9 @@ function Projects(props) {
     
     }());
 
-    function highlight() {
-        $(this).style.opacity="0.5";
-    }
+    // function highlight() {
+    //     $(this).style.opacity="0.5";
+    // }
 
     return (
         <div className="section projects" id="projects">

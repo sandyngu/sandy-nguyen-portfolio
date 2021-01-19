@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
+// import $ from 'jquery';
 import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import AboutMe from '../AboutMe/AboutMe';
