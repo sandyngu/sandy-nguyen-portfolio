@@ -54,4 +54,24 @@
         z-index: 1;
         border: none;
     }
+    &-text {
+        color: white;
+        font-family: 'Handletters';
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        margin-top: 18%;
+        left: 42.5%;
+        font-size: 6vw;
+
+        &:after {
+            overflow: hidden;
+            display: inline-block;
+            vertical-align: bottom;  
+            animation: ellipsis steps(4,end) 2s infinite;
+            content: "\2026";
+            width: 0px;
+            font-size: 4vw;
+        }
+    }
 }

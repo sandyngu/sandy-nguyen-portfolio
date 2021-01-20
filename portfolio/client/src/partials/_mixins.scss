@@ -160,3 +160,9 @@
         opacity: 100%;
     }
 }
+
+@keyframes ellipsis {
+    to {
+        width: 5vw;
+    }
+}

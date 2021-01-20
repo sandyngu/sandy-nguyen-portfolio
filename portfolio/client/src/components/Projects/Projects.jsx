@@ -177,7 +177,6 @@ function Projects(props) {
                                 <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
                                 <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
                                 <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
-                                <img src={Node} className="project__card-popup-description-logo" alt="Node Logo"/>
                             </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>
@@ -283,7 +282,6 @@ function Projects(props) {
                             <TechStacks>
                                 <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
                                 <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
                             </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>
@@ -312,34 +310,39 @@ function Projects(props) {
                         <div className="project__card-modal-x">x</div>
                     </button>
                     <iframe src="https://nursimulator.herokuapp.com/" title="NurSimulator" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.adidas ? 
                 <ProjectCardModal>
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="Adidas Hackathon" className="project__card-modal-demo" scrolling="no"/>
+                    <iframe src="https://sandyngu.github.io/4d-hackathon-adidas/" title="Adidas Hackathon" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.instock ? 
                 <ProjectCardModal>
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="InStock" className="project__card-modal-demo" scrolling="no"/>
+                    <iframe src="https://sandyngu.github.io/shredder-instock/" title="InStock" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.pair ? 
                 <ProjectCardModal>
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="Pair Programming" className="project__card-modal-demo" scrolling="no"/>
+                    <iframe src="https://sandyngu.github.io/pair-programming-app/" title="Pair Programming" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.brainflix ? 
                 <ProjectCardModal>
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="Brainflix" className="project__card-modal-demo" scrolling="no"/>
+                    <iframe src="https://sandyngu.github.io/sandy-nguyen-brainflix/" title="Brainflix" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.bandsite ? 
                 <ProjectCardModal>
@@ -347,6 +350,7 @@ function Projects(props) {
                         <div className="project__card-modal-x">x</div>
                     </button>
                     <iframe src="https://nursimulator.herokuapp.com/" title="BandSite" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.travelsite ? 
                 <ProjectCardModal>
@@ -354,6 +358,7 @@ function Projects(props) {
                         <div className="project__card-modal-x">x</div>
                     </button>
                     <iframe src="https://nursimulator.herokuapp.com/" title="TravelSite" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.coffeeshop ? 
                 <ProjectCardModal>
@@ -361,6 +366,7 @@ function Projects(props) {
                         <div className="project__card-modal-x">x</div>
                     </button>
                     <iframe src="https://nursimulator.herokuapp.com/" title="CoffeeShop" className="project__card-modal-demo" scrolling="no"/>
+                    <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
         </div>
     )
