@@ -10,6 +10,9 @@ const Comment = require('./models/Comments.js');
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(express.static('./client/build/'));
+app.use('/', express.static('./client/build/index.html'));
+
 const PORT = process.env.PORT || 5000
 
 let connection;
