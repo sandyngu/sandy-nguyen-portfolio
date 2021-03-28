@@ -1,0 +1,160 @@
+@import '../../partials/global';
+
+a {
+    text-decoration: none;
+}
+.footer {
+    background-color: rgba(0,0,0,0.05);
+    margin: 0;
+    
+    &__nav {
+        
+        &-list {
+            list-style-type: none;
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0;
+
+            &-logo {
+                position: absolute;
+                left: 2%;
+                margin-top: -0.5%;
+                width: 4%;
+            }
+            &-item {
+                color: black;
+                font-size: 2vw;
+                transition: 0.5s ease-in-out;
+                display: flex;
+
+                &--symbol {
+                    font-size: 1.5vw;
+                    padding-top: 0.6vw;
+                }
+                &--logo {
+                    width: 2vw;
+                    height: 2vw;
+                    margin-top: 4%;
+                }
+                &--logo2 {
+                    width: 1.8vw;
+                    height: 1.8vw;
+                    margin-top: 4%;
+                }
+
+                &1, &2, &3, &4 {
+                    @extend .footer__nav-list-item;
+                }
+
+                &:hover {
+                    animation: linkHover 0.9s linear;
+                    letter-spacing: 0.2vw;
+                    padding-bottom: 0; 
+                    margin: 0;
+                }
+
+                &--left {
+                    transform: none;
+                    padding: 0;
+
+                    &1, &2, &3, &4 {
+                        @extend .footer__nav-list-item--left;
+                        padding-bottom: 0; 
+                        margin: 0;
+                    }
+                }
+
+                &--hover {
+                    padding: 0 1vw;
+                    transition: 0.75s ease;
+
+                    &1 {
+                        @extend .footer__nav-list-item--hover;
+                        transform: rotate(-180deg);
+                        padding-bottom: 0;
+                    }
+                    &2 {
+                        @extend .footer__nav-list-item--hover;
+                        transform: rotate(180deg); 
+                        padding: 0;
+                    }
+                }
+
+                &-line {
+                    padding: 0;
+
+                    &1 {
+                        &--move {
+                            animation: 0.5s line9 1;
+                            transform: rotate(250deg) translate(-0.6vw, 1.5vw);
+                        }
+                    }
+                    &2 {
+                        position: absolute;
+                        margin-left: 7.15%;
+                        display: none;
+                        
+                        &--move {
+                            animation: 0.5s line10;
+                            display: block;
+                            transform: rotate(-110deg) translate(2.3vw, -6.1vw);
+                        }
+                    }
+                    &3 {
+                        &--move {
+                            animation: 0.5s line11;
+                            transform: rotate(250deg) translate(-0.6vw, 1.5vw);
+                        }
+                    }
+                    &4 {
+                        position: absolute;
+                        margin-left: 6.05%;
+                        display: none;
+                        
+                        &--move {
+                            animation: 0.5s line12;
+                            display: block;
+                            transform: rotate(-110deg) translate(1.95vw, -5.1vw);
+                        }
+                    }
+                    &5 {
+                        &--move {
+                            animation: 0.5s line13;
+                            transform: rotate(250deg) translate(-0.6vw, 1.5vw);
+                        }
+                    }
+                    &6 {
+                        position: absolute;
+                        margin-left: 5.95%;
+                        display: none;
+
+                        &--move {
+                            animation: 0.5s line14;
+                            display: block;
+                            transform: rotate(-110deg) translate(1.9vw, -5vw);
+                        }
+                    } 
+                    &7 {
+                        &--move {
+                            animation: 0.5s line13;
+                            transform: rotate(250deg) translate(-0.6vw, 1.5vw);
+                        }
+                    }
+                    &8 {
+                        position: absolute;
+                        margin-left: 5.95%;
+                        display: none;
+
+                        &--move {
+                            animation: 0.5s line14;
+                            display: block;
+                            transform: rotate(-110deg) translate(1.9vw, -5vw);
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

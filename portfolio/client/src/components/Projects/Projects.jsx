@@ -3,7 +3,6 @@ import $ from 'jquery';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import ProjectCardDescription from '../ProjectCardDescription/ProjectCardDescription';
 import ProjectCardModal from '../ProjectCardModal/ProjectCardModal';
-import TechStacks from '../TechStacks/TechStacks';
 import Line from '../../assets/images/clothesline.png';
 import CoffeeShop from '../../assets/images/coffeeshop.png';
 import CoffeeShop2 from '../../assets/images/coffeeshop2.png';
@@ -36,16 +35,6 @@ import NurSimulator7 from '../../assets/images/capstone7.png';
 import NurSimulator8 from '../../assets/images/capstone8.png';
 import Border from '../../assets/images/border.png';
 import ArrowBorder from '../../assets/images/arrow-border.png';
-import Bookshelf from '../../assets/images/bookshelf.png';
-import CSS from '../../assets/images/css.png';
-import Express from '../../assets/images/express.png';
-import HTML from '../../assets/images/html.png';
-import JS from '../../assets/images/js.png';
-import Knex from '../../assets/images/knex.png';
-import MySQL from '../../assets/images/mysql.png';
-import Node from '../../assets/images/node.png';
-import ReactJS from '../../assets/images/react.png';
-import SCSS from '../../assets/images/sass.png';
 import './projects.scss';
 
 function Projects(props) {
@@ -144,18 +133,6 @@ function Projects(props) {
                             Provided a smooth desktop experience using single-page app technologies with client-side assets and code managed through webpack.
                             Modals used for gaming components; assets enhanced with Photoshop.
                             Successful deployment with Heroku.</p>
-                            <TechStacks>
-                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
-                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
-                                <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
-                                <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
-                                <img src={Node} className="project__card-popup-description-logo" alt="Node Logo"/>
-                                <img src={Express} className="project__card-popup-description-logo" alt="Express Logo"/>
-                                <img src={Bookshelf} className="project__card-popup-description-logo" alt="Bookshelf Logo"/>
-                                <img src={Knex} className="project__card-popup-description-logo" alt="Knex Logo"/>
-                                <img src={MySQL} className="project__card-popup-description-logo" alt="MySQL Logo"/>
-                            </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>
                     <ProjectCard>
@@ -171,6 +148,7 @@ function Projects(props) {
                             <p className="project__card-popup-description">Provided 24 hours to create an innovative digital solution to address the future success of eCommerce.
                             Worked collaboratively with digital marketing, data science, and UX design to create a sustainability-driven solution by providing customers with sustainable facts on consumer products and carbon emissions contributed during shipment process.
                             Emphasized utilization of livestreaming to digitally market on social media platforms.</p>
+<<<<<<< HEAD
                             <TechStacks>
                                 <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
                                 <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
@@ -178,6 +156,8 @@ function Projects(props) {
                                 <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
                                 <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
                             </TechStacks>
+=======
+>>>>>>> parent of b90f988... Project Logos Added to Descriptions
                         </ProjectCardDescription>
                     </ProjectCard>
                     <ProjectCard>
@@ -194,15 +174,6 @@ function Projects(props) {
                             Used an agile development methodology, leveraging JIRA to track progress and milestones for a 1-week sprint.
                             Used a combination of all learned tech stacks, and usage of API documentation to handle server requests.
                             Managed GitHub pull requests for standardizing peer code reviews.</p>
-                            <TechStacks>
-                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
-                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
-                                <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
-                                <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
-                                <img src={Node} className="project__card-popup-description-logo" alt="Node Logo"/>
-                                <img src={Express} className="project__card-popup-description-logo" alt="Express Logo"/>
-                            </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>
                     <ProjectCard>
@@ -216,15 +187,6 @@ function Projects(props) {
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Baby Got Track</p>
                             <p className="project__card-popup-description">Collaborated with another developer to architect a fully-functioning 'guess-the-next-lyric' music React application with back-end server using React Hooks, NodeJS & Express.</p>
-                            <TechStacks>
-                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
-                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
-                                <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
-                                <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
-                                <img src={Node} className="project__card-popup-description-logo" alt="Node Logo"/>
-                                <img src={Express} className="project__card-popup-description-logo" alt="Express Logo"/>
-                            </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard> 
                     <ProjectCard>
@@ -238,15 +200,6 @@ function Projects(props) {
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Brainflix</p>
                             <p className="project__card-popup-description">A responsive, single-page YouTube-inspired React application, constructing reusable components and accessing API for data. Use of React routing & React lifecycle methods.</p>
-                            <TechStacks>
-                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
-                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
-                                <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
-                                <img src={ReactJS} className="project__card-popup-description-logo" alt="React Logo"/>
-                                <img src={Node} className="project__card-popup-description-logo" alt="Node Logo"/>
-                                <img src={Express} className="project__card-popup-description-logo" alt="Express Logo"/>
-                            </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>
                     <ProjectCard>
@@ -260,12 +213,6 @@ function Projects(props) {
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">BandSite</p>
                             <p className="project__card-popup-description">Created a 2-page responsive biographical website implementing JavaScript & media queries. Utilized HTTP requests using Axios to retrieve data from an API.</p>
-                            <TechStacks>
-                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
-                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                                <img src={SCSS} className="project__card-popup-description-logo" alt="Sass Logo"/>
-                                <img src={JS} className="project__card-popup-description-logo" alt="JavaScript Logo"/>
-                            </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>
                     <ProjectCard>
@@ -279,10 +226,13 @@ function Projects(props) {
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">TravelSite</p>
                             <p className="project__card-popup-description">Provided 24 hours to build a 4-page website utilizing provided mock-ups with form implementation. Utilized HTML, CSS & Flexbox.</p>
+<<<<<<< HEAD
                             <TechStacks>
                                 <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
                                 <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
                             </TechStacks>
+=======
+>>>>>>> parent of b90f988... Project Logos Added to Descriptions
                         </ProjectCardDescription>
                     </ProjectCard>
                     <ProjectCard /*onClick={()=>changeBorder()}*/>
@@ -296,10 +246,6 @@ function Projects(props) {
                         <ProjectCardDescription>
                             <p className="project__card-popup-description-title">Coffee Shop</p>
                             <p className="project__card-popup-description">Introductory project. A 2-page website built utilizing provided mock-ups, with animation implementation. Utilized HTML, CSS & Flexbox.</p>
-                            <TechStacks>
-                                <img src={HTML} className="project__card-popup-description-logo" alt="HTML Logo"/>
-                                <img src={CSS} className="project__card-popup-description-logo" alt="CSS Logo"/>
-                            </TechStacks>
                         </ProjectCardDescription>
                     </ProjectCard>               
                 </div>
