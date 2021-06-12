@@ -317,7 +317,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://sandyngu.github.io/4d-hackathon-adidas/" title="Adidas Hackathon" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://sandyngu.github.io/4d-hackathon-adidas/" title="Adidas Hackathon" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.instock ? 
@@ -325,7 +325,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://sandyngu.github.io/shredder-instock/" title="InStock" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://sandyngu.github.io/shredder-instock/" title="InStock" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.pair ? 
@@ -333,7 +333,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://sandyngu.github.io/pair-programming-app/" title="Pair Programming" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://sandyngu.github.io/pair-programming-app/" title="Pair Programming" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.brainflix ? 
@@ -341,7 +341,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://sandyngu.github.io/sandy-nguyen-brainflix/" title="Brainflix" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://sandyngu.github.io/sandy-nguyen-brainflix/" title="Brainflix" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.bandsite ? 
@@ -349,7 +349,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="BandSite" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://nursimulator.herokuapp.com/" title="BandSite" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.travelsite ? 
@@ -357,7 +357,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="TravelSite" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://nursimulator.herokuapp.com/" title="TravelSite" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
             {props.state.coffeeshop ? 
@@ -365,7 +365,7 @@ function Projects(props) {
                     <button className="project__card-modal-close" onClick={() => props.closeModal()}>
                         <div className="project__card-modal-x">x</div>
                     </button>
-                    <iframe src="https://nursimulator.herokuapp.com/" title="CoffeeShop" className="project__card-modal-demo" scrolling="no"/>
+                    {/* <iframe src="https://nursimulator.herokuapp.com/" title="CoffeeShop" className="project__card-modal-demo" scrolling="no"/> */}
                     <div className="project__card-modal-text">Loading</div>
                 </ProjectCardModal> : null}
         </div>
