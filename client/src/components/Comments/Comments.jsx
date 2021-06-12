@@ -54,16 +54,16 @@ class Comments extends React.Component {
                         <p className="comments__heading">{this.state.comments[0].name} said...</p>
                         <div className="comments__box-comments">
                         <img src={Bubble} alt="Comments Bubble" className="comments__background"/>
+                        <div className="comments__container">
                         {this.state.comments.map(comment => 
                             <>
-                                <div className="comments__container">
                                     <p className="comments__text comments__text1" id="text">{comment.comment}</p>
                                     {/* <p className="comments__text comments__text2" id="text">{this.state.comments[1].comment}</p>
                                     <p className="comments__text comments__text3" id="text">{this.state.comments[2].comment}</p>
                                     <p className="comments__text comments__text4" id="text">{this.state.comments[3].comment}</p> */}
-                                </div>
                             </>
                             )}
+                        </div>
                         </div>
                         <p className="comments__position">~ {this.state.comments[0].position} <img src={BrainStation} alt="BrainStation Logo" className="comments__logo"/></p>
                     </>
