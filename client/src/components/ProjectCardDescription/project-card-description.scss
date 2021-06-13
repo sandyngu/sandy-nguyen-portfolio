@@ -12,7 +12,8 @@
         font-size: 1.1vw;
         padding: 0vw 1vw;
         margin: 0;
-        overflow: hidden;
+        overflow: scroll;
+        overflow-x: hidden;
         text-overflow: ellipsis;
         height: 7.5vw;
 
